@@ -285,6 +285,11 @@ return "Error occurred: " + ex.Message;
 
 本项目采用MIT许可证，详细信息请参见[LICENSE](LICENSE)文件。
 
+## 关注
+
+![WolfShell](https://github.com/0x7556/wolfshell/blob/main/join2.png)
+![WolfShell](https://github.com/0x7556/wolfshell/blob/main/join.png)
+
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/0x7556/wolfshell.svg)](https://starchart.cc/0x7556/wolfshell)
