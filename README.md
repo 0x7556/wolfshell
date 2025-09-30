@@ -1,11 +1,11 @@
 [![Author](https://img.shields.io/badge/Author-0x7556-blueviolet)](https://github.com/0x7556) 
-[![WolfShell](https://img.shields.io/badge/WolfShell-930-yellowgreen)](https://github.com/0x7556/wolfshell) 
-[![Bin](https://img.shields.io/badge/WolfShell-Bin-ff69b4)](https://github.com/0x7556/wolfshell/releases) 
+[![WolfShell](https://img.shields.io/badge/WolfShell-Bin-ff69b4)](https://github.com/0x7556/wolfshell/releases) 
 [![GitHub issues](https://img.shields.io/github/issues/0x7556/wolfshell)](https://github.com/0x7556/wolfshell/issues) 
 [![Github Stars](https://img.shields.io/github/stars/0x7556/wolfshell)](https://github.com/0x7556/wolfshell) 
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
-[![Downloads](https://img.shields.io/github/downloads/0x7556/wolfshell/total?label=Release%20Download)](https://github.com/0x7556/wolfshell/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/0x7556/wolfshell/total?label=Download)](https://github.com/0x7556/wolfshell/releases/latest)
+
 
 ![WolfShell](http://www.18k.icu/img/wolfshell/wolf.png)
 
