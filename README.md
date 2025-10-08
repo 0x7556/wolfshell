@@ -301,7 +301,7 @@ return "Error occurred: " + ex.Message;
 
 ## 关注
 
-![WolfShell](https://github.com/0x7556/wolfshell/blob/main/join.png)
+![WolfShell](http://www.18k.icu/img/join.png)
 
 ## Stargazers over time
 
