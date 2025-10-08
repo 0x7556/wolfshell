@@ -7,7 +7,6 @@
 [![Github Stars](https://img.shields.io/github/stars/0x7556/wolfshell)](https://github.com/0x7556/wolfshell) 
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
-[![Downloads](https://img.shields.io/github/downloads/0x7556/wolfshell/total?label=Download)](https://github.com/0x7556/wolfshell/releases/latest)
 
 
 # 金刚狼：专为ASPX设计的高级WebShell管理工具
@@ -306,5 +305,3 @@ return "Error occurred: " + ex.Message;
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/0x7556/wolfshell.svg)](https://starchart.cc/0x7556/wolfshell)
-
-<img align='right' src="https://profile-counter.glitch.me/wolfshell/count.svg" width="200">
