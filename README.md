@@ -34,7 +34,9 @@
 *   badpotato： 利用 BadPotato 实现权限提升。
 *   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联内网webshell执行 CMD 命令进行横向移动。
 *   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网webshell执行 PowerShell 命令进行横向移动。
-
+*   sshcmd：SSH 远程命令执行工具，支持通过 webshell 作为跳板建立 SSH 链接，实现对内网主机的命令执行与横向移动。
+*   mysqlcmd：MySQL 数据库连接工具，支持通过 webshell 作为跳板连接内网MySQL，执行查询、导入导出与备份恢复等数据库操作。
+*   
 ## 辅助功能
 
 ### 加密解密
@@ -272,6 +274,15 @@ return "Error occurred: " + ex.Message;
 
 ![端口转发示例](http://www.18k.icu/img/wolfshell/Suo5Tunnel.png)
 
+## Hacking后渗透
+
+### SSH远程命令执行工具
+![Hacking](http://www.18k.icu/img/wolfshell/sshcmd.png)
+
+### Mysql数据库连接工具
+![Hacking](http://www.18k.icu/img/wolfshell/mysqlcmd.png)
+
+
 ## 免责声明
 
 - 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
@@ -287,7 +298,6 @@ return "Error occurred: " + ex.Message;
 
 ## 关注
 
-![WolfShell](https://github.com/0x7556/wolfshell/blob/main/join2.png)
 ![WolfShell](https://github.com/0x7556/wolfshell/blob/main/join.png)
 
 ## Stargazers over time
