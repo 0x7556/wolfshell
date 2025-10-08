@@ -277,11 +277,11 @@ return "Error occurred: " + ex.Message;
 
 ## Hacking后渗透
 
-### SSH远程命令执行工具
+### SSH远程命令执行示例
 
 ![Hacking](http://www.18k.icu/img/wolfshell/sshcmd.png)
 
-### Mysql数据库连接工具
+### Mysql数据库连接示例
 
 ![Hacking](http://www.18k.icu/img/wolfshell/mysqlcmd.png)
 
