@@ -302,6 +302,3 @@ return "Error occurred: " + ex.Message;
 
 ![WolfShell](http://www.18k.icu/img/join.png)
 
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/0x7556/wolfshell.svg)](https://starchart.cc/0x7556/wolfshell)
