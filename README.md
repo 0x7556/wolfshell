@@ -7,7 +7,7 @@
 [![Github Stars](https://img.shields.io/github/stars/0x7556/wolfshell)](https://github.com/0x7556/wolfshell) 
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
-[![Downloads](https://img.shields.io/github/downloads/0x7556/wolfshell/total?label=Release%20Download66)](https://github.com/0x7556/wolfshell/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/0x7556/wolfshell/total?label=Download：6666)](https://github.com/0x7556/wolfshell/releases/latest)
 
 # 金刚狼：专为ASPX设计的高级WebShell管理工具
 
