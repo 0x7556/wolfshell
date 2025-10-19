@@ -27,6 +27,8 @@
 *   PowerShell命令执行： 支持执行 PowerShell 脚本和命令。
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
 *   C#代码执行： 支持在运行时动态加载与执行 C# 代码。
+*   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
+*   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
 *   端口转发： 实现本地端口到远程内网主机的映射，方便安全地访问内部网络服务。
 *   HTTP代理： 一键内存注入Suo5高性能 HTTP 隧道代理工具。
 *   EfsPotato： 利用系统服务漏洞进行权限提升。
@@ -36,6 +38,7 @@
 *   SshCmd：SSH 远程命令执行工具，支持对内网主机的命令执行、文件上传下载实现横向移动。
 *   MyysqlCmd：MySQL 数据库连接工具，支持连接内网MySQL，执行查询、导入导出等数据库操作。
 *   SharpWeb：浏览器凭据抓取工具，支持提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
+
 
 ## 辅助功能
 
@@ -80,6 +83,8 @@
 ### C#代码执行
 
 #### 获取 ValidationKey 示例代码
+
+*   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
 
 ```csharp
 
@@ -186,6 +191,8 @@ return "Error occurred: " + ex.Message;
 
 
 #### 获取web.config密码 示例代码
+
+*   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
 
 ```csharp
 
@@ -308,6 +315,8 @@ mysqlcmd 192.168.50.139 3306 root WolfShell mysql c2VsZWN0IDMrNQ==";
 ![Hacking](http://www.18k.icu/img/wolfshell/mysqlcmd.png)
 
 ### 读取浏览器密码示例
+
+*   SharpWeb：浏览器凭据抓取工具，支持提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
 
 ```bash
 Usage:
