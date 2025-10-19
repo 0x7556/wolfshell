@@ -31,8 +31,8 @@
 *   HTTP代理： 一键内存注入Suo5高性能 HTTP 隧道代理工具。
 *   EfsPotato： 利用系统服务漏洞进行权限提升。
 *   BadPotato： 利用系统服务漏洞进行权限提升。
-*   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联内网 WebShell 执行 CMD 命令进行横向移动。
-*   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网 WebShell 执行 PowerShell 命令进行横向移动。
+*   内网级联Cmd命令执行： 支持级联内网第2层 WebShell 执行 CMD 命令进行横向移动。
+*   内网级联PowerShell执行： 支持级联内网第2层 WebShell 执行 PowerShell 命令进行横向移动。
 *   SshCmd：SSH 远程命令执行工具，支持对内网主机的命令执行、文件上传下载实现横向移动。
 *   MyysqlCmd：MySQL 数据库连接工具，支持连接内网MySQL，执行查询、导入导出等数据库操作。
 *   SharpWeb：浏览器凭据抓取工具，支持提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
