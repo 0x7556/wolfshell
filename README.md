@@ -67,6 +67,10 @@
 
 ![wolfshell](http://www.18k.icu/img/wolfshell/WolfShell.png)
 
+## 使用环境
+
+- **操作系统：** Windows
+- **.NET 版本：** .NET Framework 4.8
 
 ## 示例
 
