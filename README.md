@@ -79,6 +79,8 @@
 使用AI兔杀金刚狼 WebShell 服务端
 ![aicode](http://www.18k.icu/img/wolfshell/aicode.png)
 
+免费API： https://github.com/xtekky/gpt4free
+
 ### Cmd命令执行
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
