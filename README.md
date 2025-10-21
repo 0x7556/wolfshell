@@ -368,6 +368,11 @@ Demo:
 
 本项目采用MIT许可证，详细信息请参见[LICENSE](LICENSE)文件。
 
+## 资源链接
+
+* gpt4free（免费 API 框架）：https://github.com/xtekky/gpt4free  
+* suo5代理(HTTP隧道代理)：https://github.com/zema1/suo5
+
 ## 关注
 
 ![WolfShell](http://www.18k.icu/img/join.png)
