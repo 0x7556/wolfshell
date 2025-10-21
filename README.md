@@ -370,8 +370,16 @@ Demo:
 
 ## 资源链接
 
-* gpt4free（免费 API 框架）：https://github.com/xtekky/gpt4free  
+已集成或即将加入的工具，工具采用内存加载，有些工具未解决兼容性问题，如(SweetPotato\GodPotato，可能得上传目标在cmd下执行)
+
+* Ladon（内网渗透框架）：https://github.com/k8gege/Ladon    (功能非常丰富，正在研究中)
+* gpt4free（AI免费API）：https://github.com/xtekky/gpt4free
+* SharpWeb(浏览器密码读取)：https://github.com/djhohnstein/SharpWeb
 * suo5代理(HTTP隧道代理)：https://github.com/zema1/suo5
+* BadPotato(提权工具)：https://github.com/BeichenDream/BadPotato
+* EfsPotato(提权工具)：https://github.com/zcgonvh/EfsPotato
+
+
 
 ## 关注
 
