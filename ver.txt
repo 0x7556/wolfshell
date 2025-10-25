@@ -1,4 +1,4 @@
 Version=0.1
 Bulid=20251025
-DownloadURL=https://github.com/0x7556/wolfshell/releases/download/v1.4.2/wolfshell.zip
+DownloadURL=https://github.com/0x7556/wolfshell/releases
 [E]
