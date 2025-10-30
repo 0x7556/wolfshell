@@ -380,7 +380,7 @@ Demo:
 * suo5代理(HTTP隧道代理)：https://github.com/zema1/suo5
 * BadPotato(提权工具)：https://github.com/BeichenDream/BadPotato
 * EfsPotato(提权工具)：https://github.com/zcgonvh/EfsPotato
-
+* CVE-2025-59287漏洞利用 内存正向马: https://github.com/0x7556/CVE-2025-59287
 
 
 ## 关注
