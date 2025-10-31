@@ -26,7 +26,7 @@
 *   文件管理： 在目标系统上枚举目录文件、新建文件、重命令、删除、设置文件时间等。
 *   PowerShell命令执行： 支持执行 PowerShell 脚本和命令。
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
-*   C#代码执行： 支持动态加载与执行 C# 代码,杀软EDR、XDR环境下低危渗透。
+*   C#代码执行： 支持动态加载与执行 C# 代码。
 *   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
 *   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
 *   端口转发： 实现本地端口到远程内网主机的映射，方便安全地访问内部网络服务。
