@@ -1,4 +1,4 @@
 app=WolfShell
 Version=0.1
-Bulid=20251025
+Bulid=20251101
 DownloadURL=https://github.com/0x7556/wolfshell/releases
