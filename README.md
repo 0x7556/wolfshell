@@ -81,8 +81,6 @@
 使用AI兔杀金刚狼 WebShell 服务端
 ![aicode](http://www.18k.icu/img/wolfshell/aicode.png)
 
-免费API： https://github.com/xtekky/gpt4free
-
 ### 级联第3层WebShell Cmd命令执行 
 
 通过入口点 192.168.50.159 级联内网 192.168.50.106 再次级联下一层内网 192.168.50.21 WebShell 执行命令 
