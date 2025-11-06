@@ -370,6 +370,60 @@ Demo:
 
 ![Hacking](http://www.18k.icu/img/wolfshell/SharpWeb.png)
 
+### Ladon内网渗透工具示例
+20251106 主要集成以下探测功能
+
+```bash
+Usage:
+
+Ladon whoami
+
+Ladon 192.168.50.159/24 ICMP
+Ladon 192.168.50.159/24 PortScan
+Ladon 192.168.50.159/24 WebScan
+
+Ladon 192.168.50.159/24 SmbInfo
+Ladon 192.168.50.159/24 NbtInfo
+Ladon 192.168.50.159/24 WmiInfo
+Ladon 192.168.50.159/24 LdapInfo
+Ladon 192.168.50.159/24 RdpInfo
+Ladon 192.168.50.159/24 SmtpInfo
+Ladon 192.168.50.159/24 HttpInfo
+Ladon 192.168.50.159/24 WinrmInfo
+Ladon 192.168.50.159/24 MssqlInfo
+Ladon 192.168.50.159/24 HttpInfo
+
+Ladon 192.168.50.159/24 FtpInfo
+Ladon 192.168.50.159/24 T3Info
+Ladon 192.168.50.159/24 CiscoInfo
+Ladon 192.168.50.159/24 SnmpInfo
+
+Ladon 192.168.50.159/24 OxidInfo
+Ladon 192.168.50.159/24 EthInfo
+Ladon 192.168.50.159/24 WPinfo
+Ladon 192.168.50.159/24 DnsInfo
+
+```
+
+#### SMB协议NTLM信息OS操作系统识别
+![Hacking](http://www.18k.icu/img/wolfshell/SmbInfo.png)
+
+#### WebScan 网站标题、中间件扫描
+![Hacking](http://www.18k.icu/img/wolfshell/WebScan.png)
+
+
+### 端口扫描 示例
+
+
+```bash
+
+PortScan 192.168.50.159
+PortScan 192.168.50.159 80，22，135，445
+
+```
+
+![Hacking](http://www.18k.icu/img/wolfshell/PortScan.png)
+
 ## 免责声明
 
 - 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
