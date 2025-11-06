@@ -85,14 +85,13 @@
 
 通过入口点 192.168.50.159 级联内网 192.168.50.106 再次级联下一层内网 192.168.50.21 WebShell 执行命令 
 
-PS: 实际也可级联外网的Shell，比如抓了一些服务器做为跳板，这样就很难被追踪了，当然主要目的是为了方便内网渗透
+PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要搞的目标在第3层，这样就很难被追踪或溯源到你的真实IP了
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/Lan2CmdShell.png)
 
 ### 级联内网第2层WebShell Cmd命令执行 
 
 通过入口点 192.168.50.159 级联内网 192.168.50.106 WebShell执行命令
-
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/LanCmdShell.png)
 
