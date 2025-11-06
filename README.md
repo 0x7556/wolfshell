@@ -83,13 +83,27 @@
 
 免费API： https://github.com/xtekky/gpt4free
 
-### Cmd命令执行
+### 内网第3层WebShell Cmd命令执行 
+
+通过WebShell入口点级联第1层可达的内网WebShell执行命令,再通过第2层级联更深内网
+
+![CmdShell示例](http://www.18k.icu/img/wolfshell/Lan2CmdShell.png)
+
+### 内网第2层WebShell Cmd命令执行 
+
+通过WebShell入口点级联第1层可达的内网WebShell执行命令
+
+![CmdShell示例](http://www.18k.icu/img/wolfshell/LanCmdShell.png)
+
+
+### WebShell入口点 Cmd命令执行
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
 
-### PowerShell命令执行
+### WebShell入口点 PowerShell命令执行
 
 ![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
+
 
 
 ### 文件管理
