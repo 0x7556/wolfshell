@@ -67,8 +67,6 @@
 4. **访问WebShell**
    - 通过工具客户端连接WebShell，默认密码 WolfShell，修改密码可使用工具上的WolfHash加密。
 
-![wolfshell](http://www.18k.icu/img/wolfshell/WolfShell.png)
-
 ## 使用环境
 
 - **操作系统：** Windows
