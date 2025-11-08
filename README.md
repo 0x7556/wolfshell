@@ -79,7 +79,7 @@
 使用AI兔杀金刚狼 WebShell 服务端
 ![aicode](http://www.18k.icu/img/wolfshell/aicode.png)
 
-### 级联内网第3层WebShell Cmd命令执行 
+### 级联内网第3层WebShell 执行Cmd命令 
 
 通过入口点 192.168.50.106 级联内网 192.168.50.159 再次级联下一层内网 192.168.50.69 WebShell 执行命令 
 
@@ -87,18 +87,18 @@ PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要�
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/Lan2CmdShell.png)
 
-### 级联内网第2层WebShell Cmd命令执行 
+### 级联内网第2层WebShell 执行Cmd命令
 
 通过入口点 192.168.50.159 级联内网 192.168.50.106 WebShell执行命令
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/LanCmdShell.png)
 
 
-### WebShell入口点 Cmd命令执行
+### WebShell入口点 执行Cmd命
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
 
-### WebShell入口点 PowerShell命令执行
+### WebShell入口点 执行PowerShell命令
 
 ![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
 
