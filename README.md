@@ -98,7 +98,7 @@ PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要�
 
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
 
-### WebShell入口点 执行PowerShell命令
+### WebShell入口点 执行PowerShell命令/代码
 
 ![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
 
