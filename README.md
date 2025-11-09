@@ -399,37 +399,36 @@ Demo:
 ![Hacking](http://www.18k.icu/img/wolfshell/SharpWeb.png)
 
 ### Ladon内网渗透工具示例
-20251106 主要集成以下探测功能
+20251106 主要集成以下探测功能，其它功能暂未支持
 
 ```bash
 Usage:
 
 Ladon whoami
 
-Ladon 192.168.50.159/24 ICMP
-Ladon 192.168.50.159/24 PortScan
-Ladon 192.168.50.159/24 WebScan
+Ladon 192.168.50.159/24 ICMP         ICMP存活主机探测
+Ladon 192.168.50.159/24 PortScan     开放端口服务扫描
+Ladon 192.168.50.159/24 WebScan      网站标题、中间件
 
-Ladon 192.168.50.159/24 SmbInfo
-Ladon 192.168.50.159/24 NbtInfo
-Ladon 192.168.50.159/24 WmiInfo
-Ladon 192.168.50.159/24 LdapInfo
-Ladon 192.168.50.159/24 RdpInfo
-Ladon 192.168.50.159/24 SmtpInfo
-Ladon 192.168.50.159/24 HttpInfo
-Ladon 192.168.50.159/24 WinrmInfo
-Ladon 192.168.50.159/24 MssqlInfo
-Ladon 192.168.50.159/24 HttpInfo
+Ladon 192.168.50.159/24 SmbInfo      SMB存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 NbtInfo      NBT存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 WmiInfo      WMI存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 LdapInfo     LDAP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 RdpInfo      RDP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 SmtpInfo     SMTP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 HttpInfo     HTTP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 WinrmInfo    Winrm存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 MssqlInfo    SQL数据库主机探测、NTLM系统信息
 
-Ladon 192.168.50.159/24 FtpInfo
-Ladon 192.168.50.159/24 T3Info
-Ladon 192.168.50.159/24 CiscoInfo
-Ladon 192.168.50.159/24 SnmpInfo
+Ladon 192.168.50.159/24 FtpInfo      FTP存活主机探测
+Ladon 192.168.50.159/24 T3Info       Weblogic协议探测
+Ladon 192.168.50.159/24 CiscoInfo    Cisco路由器探测
+Ladon 192.168.50.159/24 SnmpInfo     SNMP协议主机探测，如路由器、主机等
 
-Ladon 192.168.50.159/24 OxidInfo
-Ladon 192.168.50.159/24 EthInfo
-Ladon 192.168.50.159/24 WPinfo
-Ladon 192.168.50.159/24 DnsInfo
+Ladon 192.168.50.159/24 OxidInfo     Windows多网卡主机探测
+Ladon 192.168.50.159/24 EthInfo      Windows多网卡主机探测
+Ladon 192.168.50.159/24 WPinfo       WordPress版本、插件探测、漏洞识别
+Ladon 192.168.50.159/24 DnsInfo      DNS存活主机探测、域名识别
 
 ```
 
@@ -457,7 +456,7 @@ PortScan 192.168.50.159 80，22，135，445
 - 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
 - 本工具仅供教育和研究目的，任何滥用行为将由用户自行承担后果。
 
-## 贡献
+## 问题反馈
 
 欢迎任何形式的贡献！请提交问题、建议或拉取请求。
 
@@ -477,7 +476,7 @@ PortScan 192.168.50.159 80，22，135，445
 * EfsPotato(提权工具)：https://github.com/zcgonvh/EfsPotato
 * CVE-2025-59287漏洞 .net反序列化 内存正向马: https://github.com/0x7556/CVE-2025-59287
 
-
 ## 关注
 
+您的关注、点赞、反馈，将是软件更新的动力来源，欢迎转载!
 ![WolfShell](http://www.18k.icu/img/join.png)
