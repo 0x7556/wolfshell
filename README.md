@@ -127,9 +127,10 @@ WolfShell
 PS C:\Users\admin>Write-Host "Current User:`n$env:USERNAME"
 Current User:
 WIN-021V7TK43N5$
+```
 
 ![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
-```
+
 
 ### 文件管理
 
