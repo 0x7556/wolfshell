@@ -420,15 +420,16 @@ Ladon 192.168.50.159/24 HttpInfo     HTTP存活主机探测、NTLM系统信息
 Ladon 192.168.50.159/24 WinrmInfo    Winrm存活主机探测、NTLM系统信息
 Ladon 192.168.50.159/24 MssqlInfo    SQL数据库主机探测、NTLM系统信息
 
-Ladon 192.168.50.159/24 FtpInfo      FTP存活主机探测
-Ladon 192.168.50.159/24 T3Info       Weblogic协议探测
-Ladon 192.168.50.159/24 CiscoInfo    Cisco路由器探测
-Ladon 192.168.50.159/24 SnmpInfo     SNMP协议主机探测，如路由器、主机等
+Ladon 192.168.50.159/24 FtpInfo      FTP存活主机探测
+Ladon 192.168.50.159/24 T3Info       Weblogic协议探测
+Ladon 192.168.50.159/24 CiscoInfo    Cisco路由器探测
+Ladon 192.168.50.159/24 SnmpInfo   SNMP设备探测，如路由器、交换机等
 
-Ladon 192.168.50.159/24 OxidInfo     Windows多网卡主机探测
-Ladon 192.168.50.159/24 EthInfo      Windows多网卡主机探测
-Ladon 192.168.50.159/24 WPinfo       WordPress版本、插件探测、漏洞识别
-Ladon 192.168.50.159/24 DnsInfo      DNS存活主机探测、域名识别
+Ladon 192.168.50.159/24 OxidInfo     Windows多网卡主机探测
+Ladon 192.168.50.159/24 EthInfo      Windows多网卡主机探测
+Ladon http://0x7556.org WPinfo     WordPress版本、插件探测、漏洞
+Ladon 192.168.50.159/24 DnsInfo      DNS存活主机探测、域名识别
+
 
 ```
 
