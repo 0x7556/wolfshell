@@ -102,6 +102,7 @@ PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要�
 * whoami代码实现非系统whoami
 * 支持命令执行、代码执行 长度9K
 * 输入info、ver可查看操作系统版本、位数、.NET版本、PowerShell版本信息
+* 输入whoami、username可自动转成对应powershell代码查看用户信息
 * Base64加密代码执行 示例 base64:ZWNobyBXb2xmU2hlbGw=
 
 ```csharp
