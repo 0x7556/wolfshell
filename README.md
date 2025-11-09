@@ -99,9 +99,37 @@ PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要�
 ![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
 
 ### WebShell入口点 执行PowerShell命令/代码
+* whoami代码实现非系统whoami
+* 支持命令执行、代码执行 长度9K
+* 输入info、ver可查看操作系统版本、位数、.NET版本、PowerShell版本信息
+* Base64加密代码执行 示例 base64:ZWNobyBXb2xmU2hlbGw=
+
+```csharp
+PS C:\Users\admin>whoami
+whoami: IIS APPPOOL\DefaultAppPool
+Username: WIN-021V7TK43N5$
+
+PS C:\Users\admin>info
+Operating System Version: Microsoft Windows Server 2019 Datacenter 64 bit
+Version Number: 10.0.17763
+
+PowerShell Version:
+5.1.17763.1
+
+.NET Detailed Versions:
+PSChildName Version   Release
+----------- -------   -------
+Client      4.7.03190  461814
+
+PS C:\Users\admin>base64:ZWNobyBXb2xmU2hlbGw=
+WolfShell
+
+PS C:\Users\admin>Write-Host "Current User:`n$env:USERNAME"
+Current User:
+WIN-021V7TK43N5$
 
 ![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
-
+```
 
 ### 文件管理
 
