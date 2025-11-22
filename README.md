@@ -56,7 +56,9 @@
 ## 安装与使用
 
 1. **下载WolfShell**
-   - git clone https://github.com/0x7556/wolfshell.git
+```bash
+git clone https://github.com/0x7556/wolfshell.git
+```
 
 2. **配置环境**
    - 确保目标环境支持ASPX，并已正确配置。
