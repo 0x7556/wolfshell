@@ -39,8 +39,10 @@
 *   MysqlCmd：MySQL 数据库连接工具，支持连接内网MySQL，执行查询、导入导出等数据库操作。
 *   MssqlCmd：SQL Server数据库连接工具，支持连接内网数据库，执行查询、导入导出、横向移动、命令执行、Potato提权等。
 *   SharpWeb：浏览器凭据抓取工具，支持提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
+*   密码读取: IISpwd wifipwd FileZillaPwd firefoxpwd XshellPwd GetPwd FirefoxHistory FirefoxCookie
 *   AI免杀：接入AI人工智能，聊个天就能免杀WebShell。
 *   Ladon：内网渗透工具集，内存加载无文件落地，包含端口扫描、资产探测、密码审计、漏洞检测、漏洞利用、横向移动等。(工具在集成中，目前已完成10多种协议资产探测，其它模块暂未支持，和potato一样，无法集成所有工具，有些功能可能得使用原程序)
+*   漏洞检测：MS17010 SMBGhost  HikvisionPoc ActivemqPoc Struts2Poc WeblogicPoc CVE-2022-36537  CVE-2024-47176 CVE-2022-27925 CVE-2024-27956
 
 
 ## 辅助功能
