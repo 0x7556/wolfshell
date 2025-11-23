@@ -61,7 +61,7 @@ git clone https://github.com/0x7556/wolfshell.git
 ```
 
 2. **配置环境**
-   - 确保目标环境支持ASPX，并已正确配置。
+   - 确保目标环境支持ASPX、ASHX，并已正确配置。
 
 3. **上传WolfShell**
    - 将WolfShell文件上传到目标ASPX服务器。
