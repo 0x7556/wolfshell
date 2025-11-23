@@ -56,12 +56,12 @@
     <url1>http://192.168.50.159/wolf.aspx</url1>
     <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
     <url2>http://192.168.50.106/shell2.aspx</url2>
-    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
-    <url3>http://192.168.50.105/shell3.aspx</url3>
+    <pwd2>XZDY1nBH/PS28ETHkHSwBg==</pwd2>
+    <url3>http://192.168.50.106/shell3.aspx</url3>
     <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
     <ip>192.168.50.159</ip>
     <note>888</note>
-    <time>2025-11-06 20:36:01</time>
+    <time>2025-11-08 21:37:14</time>
   </webshell>
   <webshell id="7">
     <url1>http://192.168.50.105/fakepath31337/23434.aspx</url1>
@@ -92,31 +92,16 @@
     <time>2025-09-30 21:28:12</time>
   </webshell>
   <webshell id="9">
-    <url1>http://192.168.50.106/shell.ashx</url1>
-    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url1>http://192.168.50.106/shell.aspx</url1>
+    <pwd>XZDY1nBH/PS28ETHkHSwBg==</pwd>
     <url2>http://192.168.50.159:7556/wolf.exp</url2>
     <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
-    <url3>
-    </url3>
+    <url3>http://192.168.50.69:8080</url3>
     <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
     <ip>192.168.50.106</ip>
     <note>
     </note>
-    <time>2025-11-06 21:18:39</time>
-  </webshell>
-  <webshell id="10">
-    <url1>http://192.168.1.18/shell.aspx</url1>
-    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
-    <url2>
-    </url2>
-    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
-    <url3>
-    </url3>
-    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
-    <ip>192.168.1.18</ip>
-    <note>
-    </note>
-    <time>2025-10-05 20:30:39</time>
+    <time>2025-11-09 14:24:41</time>
   </webshell>
   <webshell id="11">
     <url1>http://192.168.50.21/2025.aspx</url1>
@@ -147,7 +132,7 @@
     <time>2025-10-07 09:28:42</time>
   </webshell>
   <webshell id="13">
-    <url1>http://192.168.50.31/images/2020/</url1>
+    <url1>http://192.168.50.137/images/2020/</url1>
     <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
     <url2>
     </url2>
@@ -155,10 +140,10 @@
     <url3>
     </url3>
     <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
-    <ip>192.168.50.31</ip>
+    <ip>192.168.50.137</ip>
     <note>
     </note>
-    <time>2025-10-13 20:49:16</time>
+    <time>2025-11-18 22:52:58</time>
   </webshell>
   <webshell id="14">
     <url1>http://192.168.50.69/images/2020/</url1>
@@ -228,7 +213,21 @@
     <time>2025-11-06 20:15:49</time>
   </webshell>
   <webshell id="19">
-    <url1>http://192.168.50.106:8080</url1>
+    <url1>http://192.168.50.69:8080</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>192.168.50.69</ip>
+    <note>
+    </note>
+    <time>2025-11-18 22:50:18</time>
+  </webshell>
+  <webshell id="20">
+    <url1>http://192.168.50.106/shell.asmx</url1>
     <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
     <url2>
     </url2>
@@ -239,6 +238,91 @@
     <ip>192.168.50.106</ip>
     <note>
     </note>
-    <time>2025-11-02 00:35:33</time>
+    <time>2025-11-09 23:35:01</time>
+  </webshell>
+  <webshell id="21">
+    <url1>http://192.168.50.106/shell.ashx</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>192.168.50.106</ip>
+    <note>
+    </note>
+    <time>2025-11-13 22:37:17</time>
+  </webshell>
+  <webshell id="22">
+    <url1>http://192.168.50.69/images/2020/</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>192.168.50.69</ip>
+    <note>
+    </note>
+    <time>2025-11-18 22:55:22</time>
+  </webshell>
+  <webshell id="23">
+    <url1>http://127.0.0.1:8080</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>
+    </ip>
+    <note>
+    </note>
+    <time>2025-11-22 22:05:34</time>
+  </webshell>
+  <webshell id="24">
+    <url1>http://192.168.50.137:8080</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>192.168.50.137</ip>
+    <note>
+    </note>
+    <time>2025-11-23 11:20:49</time>
+  </webshell>
+  <webshell id="25">
+    <url1>http://192.168.50.31/images/2020</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>192.168.50.31</ip>
+    <note>
+    </note>
+    <time>2025-11-23 12:13:38</time>
+  </webshell>
+  <webshell id="26">
+    <url1>http://192.168.50.106/wolf_mem.aspx</url1>
+    <pwd>gyV0Un6KgT6/OzGCnDDOOw==</pwd>
+    <url2>
+    </url2>
+    <pwd2>gyV0Un6KgT6/OzGCnDDOOw==</pwd2>
+    <url3>
+    </url3>
+    <pwd3>gyV0Un6KgT6/OzGCnDDOOw==</pwd3>
+    <ip>192.168.50.106</ip>
+    <note>
+    </note>
+    <time>2025-11-23 22:30:11</time>
   </webshell>
 </Pontus>
