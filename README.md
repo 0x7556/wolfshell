@@ -22,9 +22,11 @@
 
 ## 🔥 功能特性
 
+*   支持ASPX、ASHX、ASMX、HTTP、TCP、PS1、EXE、DLL，(目前仅开放ASPX、ASHX、内存马格式)。
+*   内存马：ASPX一键注入内存马，任意路径访问，每次都可修改shell地址连接，干扰蓝队分析。
 *   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。
 *   文件管理： 在目标系统上枚举目录文件、新建文件、重命令、删除、设置文件时间等。
-*   PowerShell命令执行： 支持执行 PowerShell 代码和命令。
+*   PowerShell执行： 支持执行 PowerShell 代码和命令。
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
 *   C#代码执行： 支持动态加载与执行 C# 代码。
 *   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
