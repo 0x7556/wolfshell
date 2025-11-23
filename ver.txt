@@ -1,5 +1,5 @@
 app=WolfShell
 Version=1.3
-Bulid=20251123
+Bulid=20251124
 BuildTime=20:00:00
 DownloadURL=https://github.com/0x7556/wolfshell
