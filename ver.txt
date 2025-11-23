@@ -1,5 +1,5 @@
 app=WolfShell
-Version=1.3
-BuildDate=20251123
-BuildTime=18:00:00
+Version=1.4
+BuildDate=20251124
+BuildTime=00:00:00
 DownloadURL=https://github.com/0x7556/wolfshell
