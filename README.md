@@ -82,6 +82,8 @@ git clone https://github.com/0x7556/wolfshell.git
 
 ## 命令 | 漏洞 GetShell
 
+具备命令执行条件时，可通过以下4种方法写入 金刚狼 WebShell
+
 ### PowerShell写入wolf.aspx
 
 ```bash
