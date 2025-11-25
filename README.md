@@ -70,7 +70,7 @@ git clone https://github.com/0x7556/wolfshell.git
    - 确保目标环境支持ASPX、ASHX，并已正确配置。
 
 3. **上传WolfShell**
-   - 将WolfShell文件上传到目标ASPX服务器。
+   - 将WolfShell文件上传到目标服务器，支持ASPX、ASHX、内存马3种类型。
 
 4. **访问WebShell**
    - 通过工具客户端连接WebShell，默认密码 WolfShell，修改密码可使用工具上的WolfHash加密。
