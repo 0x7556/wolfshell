@@ -460,6 +460,27 @@ PortScan 192.168.50.159 80，22，135，445
 
 ![Hacking](http://www.18k.icu/img/wolfshell/PortScan.png)
 
+## MS17010 漏洞检测
+
+![WolfShell](http://www.18k.icu/img/wolfshell/ms17010.png)
+
+
+## SQL Server横向移动 数据库提权
+
+![WolfShell](http://www.18k.icu/img/wolfshell/MssqlCmd.png)
+
+
+## Xshell密码读取
+
+![WolfShell](http://www.18k.icu/img/wolfshell/XshellPwd.png)
+
+
+## webkey 密码读取
+
+解析web.config 获取ValidationKey (ViewState反序列化 Exchange、SharePoint后门)
+
+![WolfShell](http://www.18k.icu/img/wolfshell/webkey.png)
+
 ## 免责声明
 
 - 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
