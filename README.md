@@ -508,6 +508,12 @@ PortScan 192.168.50.159 80，22，135，445
 
 ![WolfShell](http://www.18k.icu/img/wolfshell/webkey.png)
 
+## CVE-2025-55182 Next.js Rce 漏洞利用
+[+]CVE-2025-55182	CVE-2025-55182 Next.js Rce 漏洞利用
+[+]NextJSexp		CVE-2025-55182 Next.js Rce 漏洞利用
+
+![WolfShell](http://www.18k.icu/img/wolfshell/nextjsexp.png)
+
 ## 免责声明
 
 - 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
