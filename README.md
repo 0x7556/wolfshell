@@ -46,7 +46,8 @@
 *   横向工具：wshell SmbExec WmiExec WmiExec2 AtExec MssqlCmd MmcExec ShellExec ShellBrowserExec
 *   AI免杀：接入AI人工智能，聊个天就能免杀WebShell。
 *   Ladon：内网渗透工具集，内存加载无文件落地，包含端口扫描、资产探测、密码审计、漏洞检测、漏洞利用、横向移动等。(工具在集成中，目前已完成10多种协议资产探测，其它模块暂未支持，和potato一样，无法集成所有工具，有些功能可能得使用原程序)
-
+*   AddUser： 绕过杀软EDR\XDR添加系统用户、管理员、域用户、域管理员工具。
+*   NoPowerShell：禁用或没有PowerShell执行PowerShell命令、代码、文件功能。
 
 ## 辅助功能
 
