@@ -28,7 +28,7 @@
 *   文件管理： 在目标系统上枚举目录文件、新建文件、重命令、删除、设置文件时间等。
 *   PowerShell执行： 支持执行 PowerShell 代码和命令。
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
-*   .NET程序执行： 支持内存加载执行自定义.NET命令行EXE程序，快速扩展后渗透能力。
+*   .NET程序执行： 支持内存加载执行自定义.NET命令行EXE程序，快速扩展后渗透能力，类似Cobalt Strike的execute-assembly。
 *   C#代码执行： 支持动态加载与执行 C# 代码。
 *   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
 *   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
@@ -110,6 +110,11 @@ echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Cou
 ```
 
 ## 功能示例
+
+### 自定义.NET程序执行
+
+.NET程序执行： 支持内存加载执行自定义.NET命令行EXE程序，快速扩展后渗透能力，类似Cobalt Strike的execute-assembly。
+![exeloader](http://www.18k.icu/img/wolfshell/ExeLoader.png)
 
 ### AI人工智能
 
