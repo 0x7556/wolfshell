@@ -24,9 +24,9 @@
 
 *   Shell：支持ASPX、ASHX、ASMX、HTTP、TCP、PS1、EXE、DLL，(目前仅开放ASPX、ASHX、内存马3种类型)。
 *   内存马：ASPX一键注入内存马，任意路径访问，每次都可修改shell地址连接，干扰蓝队分析。
-*   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。魔改whoami等被EDR记录的敏感命令
+*   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。魔改whoami防止被EDR记录并报警
 *   文件管理： 在目标系统上枚举目录文件、新建文件、文件上传、EXE执行、重命令、删除、设置文件时间等。
-*   PowerShell执行： 支持执行 PowerShell 代码和命令。魔改whoami等被EDR记录的敏感命令
+*   PowerShell执行： 支持执行 PowerShell 代码和命令。魔改whoami防止被EDR记录并报警
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
 *   .NET程序执行： 支持内存加载执行自定义.NET程序集，快速扩展后渗透能力。
 *   C#代码执行： 支持动态加载与执行 C# 代码。
