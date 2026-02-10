@@ -22,7 +22,7 @@
 ![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
 
     
-### AI操作WebShell渗透
+### AI操作金刚狼WebShell渗透
 
 ![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp2.png)
 
