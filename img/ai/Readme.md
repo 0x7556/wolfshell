@@ -18,6 +18,7 @@
     },
 ```
 
+### Cherry Studio
 ![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
 
     
