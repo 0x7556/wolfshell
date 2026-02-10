@@ -1,7 +1,7 @@
 # AI操作 金刚狼WebShell渗透
 
     
- ### MCP配置
+ ### Cherry Studio MCP配置
 
  ```json
     "wolfshellmcp": {
@@ -17,6 +17,8 @@
       }
     },
 ```
+
+其它客户端同理，欢迎提交其它客户端配置代码
 
 ### Cherry Studio 客户端示例
 
