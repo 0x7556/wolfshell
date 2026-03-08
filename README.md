@@ -30,6 +30,7 @@
 *   PowerShell执行： 支持执行 PowerShell 代码和命令。魔改whoami防止被EDR记录并报警
 *   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
 *   .NET程序执行： 支持内存加载执行自定义.NET程序集，快速扩展后渗透能力。
+*   内存加载扫描： 只需研发单个IP的.NET程序，通过该模块即可变成内存加载的C段扫描器。
 *   C#代码执行： 支持动态加载与执行 C# 代码。
 *   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
 *   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
