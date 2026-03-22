@@ -524,6 +524,35 @@ PortScan 192.168.50.159 80，22，135，445
 
 ![WolfShell](img/nextjsexp.png)
 
+## 内存加载 内网扫描器
+
+### 内存加载扫描器
+* 只需研发单个IP的.NET程序，通过该模块即可变成内存加载的C段扫描器。
+* 如只需实现对1个IP的检测、漏洞利用等工具，注意：类和方法需为 Public
+
+#### 自定义工具 原始用法
+```bash
+F:\py>urltitle.exe 192.168.50.1
+URL: http://192.168.50.1/ | Status: 200 | Banner: httpd/2.0 | Title: No Title
+```
+
+
+#### 远程内存加载 变身 内网C段扫描器
+
+使用方法：
+1. 将目标 EXE 拖放到“ExePath”文件路径输入框。  
+2. 在“C 段”输入框中填写要扫描的网段（例如 192.168.1.0/24）。  
+3. 点击“Scan”按钮开始扫描。扫描行为和结果由所加载的 EXE 功能决定。  
+
+说明：
+- 加载器默认先通过 ICMP（ping）探测目标是否存活，只有存活的主机才会被加载并执行自定义 EXE。  
+- 若目标网络禁用 ICMP 响应，请取消勾选“先行探测/ICMP”选项以跳过探测步骤。
+-- 
+![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan.png)
+
+#### 内存加载扫描器 内置MS17010漏洞检测
+![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan-ms17010.png)
+
 ## 免责声明
 
 - 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
