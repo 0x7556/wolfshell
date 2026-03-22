@@ -551,7 +551,7 @@ URL: http://192.168.50.1/ | Status: 200 | Banner: httpd/2.0 | Title: No Title
 ![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan.png)
 
 #### 内存加载扫描器 内置MS17010漏洞检测
-![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan-ms17010.png)
+![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan_ms17010.png)
 
 ## 免责声明
 
