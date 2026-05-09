@@ -539,6 +539,11 @@ PortScan 192.168.50.159 80，22，135，445
 
 ![WolfShell](img/nextjsexp.png)
 
+## EXP本地使用
+
+本机使用 Hacking 里的工具EXP,先运行HackTest，添加Shell: http://127.0.0.1:8080/wolfshell
+
+
 ## 内存加载 内网扫描器
 
 ### 内存加载扫描器
