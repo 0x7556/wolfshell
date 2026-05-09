@@ -23,7 +23,8 @@
 
 ## 🔥 功能特性
 
-*   Shell：支持ASPX、ASHX、ASMX、HTTP、TCP、PS1、EXE、DLL，(已开放ASPX、ASHX、内存马、EXE、PowerShell五种类型,exe、ps1支持植入个人电脑正向马，通过级联功能，控制整个内网)。
+*   Shell：支持ASPX、ASHX、ASMX、HTTP、TCP、PS1、EXE、DLL，(已开放ASPX、ASHX、内存马、EXE、PowerShell五种类型)。
+*   正向马：支持内网个人机植入正向后门、IIS端口复用，exe正向马[wolf.cs](shell/wolf.cs)、ps1正向马[wolf.ps1](shell/wolf.ps1)
 *   内存马：ASPX一键注入内存马，任意路径访问，每次都可修改shell地址连接，干扰蓝队分析。
 *   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。魔改whoami防止被EDR记录并报警。
 *   文件管理： 在目标系统上枚举目录文件、新建文件、文件上传、EXE执行、重命令、删除、设置文件时间等。
