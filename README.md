@@ -8,7 +8,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 
-## 金刚狼：专为.NET程序、ASPX脚本设计的高级Shell管理工具
+## 金刚狼：首款支持AI渗透的高级WebShell & C2 管理工具
 
 金刚狼是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、提权、和内网穿透能力。它**集成了大量渗透工具**，**支持内存加载无文件落地操作**，**实现高隐蔽性的内网渗透**。
 
