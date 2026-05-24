@@ -2,7 +2,7 @@
 
 ## AI智能免杀 
 使用AI兔杀金刚狼 WebShell 服务端
-![aicode](img/aicode.png)
+![aicode](https://github.com/0x7556/wolfshell/img/aicode.png)
 
 ## AI智能渗透
 
@@ -44,7 +44,7 @@
 ### 2. AI渗透 通过金刚狼客户端预配置的 ID 执行 CMD 命令  
 优点不会向AI泄露目标Shell和密码
 **示例提示词：**
-- 使用金刚狼 ID 为 3 的 Shell 执行 CMD 命令：查看当前用户
+- 使用金刚狼 ID 为 9 的 Shell 执行 CMD 命令：查看当前用户
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdID.png)
 
