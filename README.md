@@ -168,19 +168,35 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
 
-    
-### AI操作金刚狼WebShell渗透
 
-可使用wshell、wolfshell、金刚狼等关键字指挥AI连接webshell执行命令进行后渗透
 
-##### 金刚狼
-![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp2.png)
 
-##### wshell
-![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp3.png)
+**1. WolfShell_Cmd**
+功能：金刚狼Shell在目标上执行 CMD 命令 (通过传入的Shell地址、密码)
+提示词1：使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行CMD命令 whoami
+提示词2：使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行CMD命令 查看系统信息
 
-##### 金刚狼
-![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp4.png)
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
+
+**2. WolfShell_Cmd_ID**
+功能：金刚狼Shell在目标上执行 CMD 命令（通过金刚狼客户端预配置的 ID）
+提示词：使用金刚狼ID为3的Shell执行CMD命令 查看当前用户
+
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
+
+**3. WolfShell_PowerShell_Cmd**
+功能：金刚狼Shell在目标上执行 PowerShell 命令
+提示词1：使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行PowerShell命令 whoami
+提示词2：使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行PowerShell命令 查看系统信息
+
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
+
+**4. WolfShell_PowerShell_ID**
+功能：金刚狼Shell在目标上执行 PowerShell 命令（通过金刚狼客户端预配置的ID）
+提示词1：使用金刚狼ID为9的Shell执行PowerShell命令 ipconfig
+提示词2：使用金刚狼ID为9的Shell执行PowerShell命令 查看当前IP
+
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
 
 
 
