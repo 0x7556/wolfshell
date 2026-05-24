@@ -168,7 +168,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 点击金刚狼Shell工具标签“AI->MCP”,找到按钮“API MCP Server”
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShell_API.png)
 
-### 1. AI通过金刚狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
+### 1. AI渗透 通过金刚狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
 
 **示例提示词：**
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：whoami  
@@ -178,7 +178,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 
 
-### 2. AI通过金刚狼客户端预配置的 ID 执行 CMD 命令  
+### 2. AI渗透 通过金刚狼客户端预配置的 ID 执行 CMD 命令  
 **示例提示词：**
 - 使用金刚狼 ID 为 3 的 Shell 执行 CMD 命令：查看当前用户
 
@@ -186,14 +186,14 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 
 
-### 3. AI通过金刚狼 Shell 执行 PowerShell 命令（使用 Shell 地址和密码）  
+### 3. AI渗透 通过金刚狼 Shell 执行 PowerShell 命令（使用 Shell 地址和密码）  
 **示例提示词：**
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：whoami  
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：查看系统信息
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdWhoami.png)
 
-### 4. AI通过金刚狼客户端预配置的 ID 执行 PowerShell 命令  
+### 4. AI渗透 通过金刚狼客户端预配置的 ID 执行 PowerShell 命令  
 **示例提示词：**
 - 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：ipconfig  
 - 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：查看当前 IP
