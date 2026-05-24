@@ -58,6 +58,7 @@
 ### AI人工智能
 
 *   AI免杀：接入AI人工智能，聊个天就能免杀WebShell。
+*   AI渗透：内置MCP服务器，使用自然语言指挥AI后渗透。
 
 ### 加密解密
 
@@ -135,10 +136,53 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 .NET程序执行： 支持内存加载执行自定义.NET程序集，快速扩展后渗透能力。
 ![exeloader](img/ExeLoader.png)
 
-### AI人工智能
+# AI人工智能
 
+## AI免杀 
 使用AI兔杀金刚狼 WebShell 服务端
 ![aicode](img/aicode.png)
+
+## AI渗透
+
+    
+ ### Cherry Studio MCP配置
+
+ ```json
+    "wolfshellmcp": {
+      "name": "wolfshell",
+      "type": "stdio",
+      "description": "",
+      "isActive": true,
+      "timeout": "60",
+      "command": "E:\\Download\\wolfshell-main\\wmcp.exe",
+      "args": [],
+      "env": {
+        "wolfshell": "E:\\Download\\wolfshell-main\\wshell.exe"
+      }
+    },
+```
+
+其它客户端同理，欢迎提交其它客户端配置代码
+
+### Cherry Studio 客户端示例
+
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
+
+    
+### AI操作金刚狼WebShell渗透
+
+可使用wshell、wolfshell、金刚狼等关键字指挥AI连接webshell执行命令进行后渗透
+
+##### 金刚狼
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp2.png)
+
+##### wshell
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp3.png)
+
+##### 金刚狼
+![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp4.png)
+
+
 
 ### 级联内网第3层WebShell 执行Cmd命令 
 
