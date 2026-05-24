@@ -148,27 +148,22 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
  ### Cherry Studio MCP配置
 
  ```json
-    "wolfshellmcp": {
-      "name": "wolfshell",
+  "mcpServers": {
+    "xf5pBIECy50rKmx53Gy7n": {
+      "name": "WolfShellMCP",
       "type": "stdio",
       "description": "",
       "isActive": true,
-      "timeout": "60",
-      "command": "E:\\Download\\wolfshell-main\\wmcp.exe",
+      "command": "C:\\Users\\Administrator\\Downloads\\wolfshell-main\\WolfShellMCP.exe",
       "args": [],
       "env": {
-        "wolfshell": "E:\\Download\\wolfshell-main\\wshell.exe"
+        "WOLFSHELL_API_URL": "http://127.0.0.1:7556"
       }
-    },
+    }
 ```
 
 其它客户端同理，欢迎提交其它客户端配置代码
 
-已移除重复的“在目标上”，并更新文本如下，可直接复制到 GitHub README.md 使用：
-
-## Cherry Studio 客户端示例
-
-![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp1.png)
 
 
 ### 1. WolfShell_Cmd
