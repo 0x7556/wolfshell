@@ -204,6 +204,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpPS1.png)
 
+### 5. AI渗透 金刚狼 WolfShell 视频演示
+https://github.com/0x7556/hackvideo/blob/main/Wolf%20AI%20Shell.mov
+
 
 ## 级联控制内网Shell & C2
 
