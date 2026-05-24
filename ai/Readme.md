@@ -26,7 +26,7 @@
 
 * 其它客户端同理，欢迎提交其它客户端配置代码，跨平台MCP，支持Windows/Linux/MacOS等操作系统
 
-* 金刚狼MCP： https://github.com/0x7556/PentestMCP/releases/tag/wolfshell1.0
+* 金刚狼AI Shell MCP： https://github.com/0x7556/PentestMCP/releases/tag/wolfshell1.0
 
 ### 启动AI智能服务器API
 点击金刚狼Shell工具标签“AI->MCP”,找到按钮“API MCP Server”
