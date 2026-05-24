@@ -177,7 +177,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：whoami  
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：查看系统信息
 
-![img](https://github.com/0x7556/wolfshell/blob/main/ai/WolfShellMcpCmd.png)
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai//WolfShellMcpCmd.png)
 
 
 
@@ -186,7 +186,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 **示例提示词：**
 - 使用金刚狼 ID 为 3 的 Shell 执行 CMD 命令：查看当前用户
 
-![img](https://github.com/0x7556/wolfshell/blob/main/ai/WolfShellMcpCmdID.png)
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdID.png)
 
 
 
@@ -196,7 +196,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：whoami  
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：查看系统信息
 
-![img](https://github.com/0x7556/wolfshell/blob/main/ai/WolfShellMcpCmdWhoami.png)
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdWhoami.png)
 
 ### 4. WolfShell_PowerShell_ID
 **功能：** 通过金刚狼客户端预配置的 ID 执行 PowerShell 命令  
@@ -204,7 +204,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 - 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：ipconfig  
 - 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：查看当前 IP
 
-![img](https://github.com/0x7556/wolfshell/blob/main/ai/WolfShellMcpPS1.png)
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpPS1.png)
 
 
 ### 级联内网第3层WebShell 执行Cmd命令 
