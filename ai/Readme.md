@@ -31,8 +31,9 @@
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShell_API.png)
 
 ### 1. AI渗透 通过金刚狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
-
+配合相关漏洞让AI自动获取shell，以成功执行命令为验收标准，防止AI幻觉或检测200状态误报为成功GetShell。
 **示例提示词：**
+
 - 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 执行 CMD 命令： whoami
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：查看系统信息
 
@@ -41,6 +42,7 @@
 
 
 ### 2. AI渗透 通过金刚狼客户端预配置的 ID 执行 CMD 命令  
+优点不会向AI泄露目标Shell和密码
 **示例提示词：**
 - 使用金刚狼 ID 为 3 的 Shell 执行 CMD 命令：查看当前用户
 
@@ -49,13 +51,15 @@
 
 
 ### 3. AI渗透 通过金刚狼 Shell 执行 PowerShell 命令（使用 Shell 地址和密码）  
+配合相关漏洞让AI自动获取shell，以成功执行命令为验收标准，防止AI幻觉或检测200状态误报为成功GetShell。
 **示例提示词：**
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：whoami  
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：查看系统信息
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdWhoami.png)
 
-### 4. AI渗透 通过金刚狼客户端预配置的 ID 执行 PowerShell 命令  
+### 4. AI渗透 通过金刚狼客户端预配置的 ID 执行 PowerShell 命令
+优点不会向AI泄露目标Shell和密码
 **示例提示词：**
 - 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：ipconfig  
 - 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：查看当前 IP
