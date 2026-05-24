@@ -603,4 +603,4 @@ URL: http://192.168.50.1/ | Status: 200 | Banner: httpd/2.0 | Title: No Title
 
 * 欢迎大家关注公众号和Github，您的关注、点赞、反馈，将是软件更新的动力来源!
   
-![WolfShell](img/join.png) ![WolfShell](img/joinwx.jpeg)
+![WolfShell](join.png) ![WolfShell](join_group.png)
