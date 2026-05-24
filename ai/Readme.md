@@ -2,7 +2,7 @@
 
 ## AI智能免杀 
 使用AI兔杀金刚狼 WebShell 服务端
-![aicode](https://github.com/0x7556/wolfshell/img/aicode.png)
+![aicode](https://github.com/0x7556/wolfshell/blob/main/img/aicode.png)
 
 ## AI智能渗透
 
