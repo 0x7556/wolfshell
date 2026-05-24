@@ -33,7 +33,7 @@
 ### 1. AI渗透 通过金刚狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
 
 **示例提示词：**
-- 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：whoami  
+- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 执行 CMD 命令： whoami
 - 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：查看系统信息
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmd.png)
