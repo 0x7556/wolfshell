@@ -1,5 +1,5 @@
 
-![WolfShell](img/wolfshell.png)
+![WolfShell](wolfshell.png)
 
 [![Author](https://img.shields.io/badge/Author-0x7556-blueviolet)](https://github.com/0x7556) 
 [![WolfShell](https://img.shields.io/badge/WolfShell-Bin-ff69b4)](https://github.com/0x7556/wolfshell/releases) 
