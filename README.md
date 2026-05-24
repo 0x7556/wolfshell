@@ -157,7 +157,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
       "command": "C:\\Users\\Administrator\\Downloads\\wolfshell-main\\WolfShellMCP.exe",
       "args": [],
       "env": {
-        "WOLFSHELL_API_URL": "http://127.0.0.1:7556"
+        "WOLFSHELL_API": "http://127.0.0.1:7556"
       }
     }
 ```
