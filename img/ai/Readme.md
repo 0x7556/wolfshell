@@ -1,6 +1,5 @@
-# AI操作 金刚狼WebShell渗透
+# AI金刚狼wshell.exe执行命令渗透 
 
-    
  ### Cherry Studio MCP配置
 
  ```json
@@ -38,3 +37,5 @@
 ##### 金刚狼
 ![config](https://github.com/0x7556/wolfshell/blob/main/img/ai/wmcp4.png)
 
+#### AI MCP服务器下载
+https://github.com/0x7556/PentestMCP/releases/tag/wolfshell1.0
