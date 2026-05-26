@@ -5,7 +5,7 @@ using System.Text;
 using System.Security.Cryptography;
 using System.Reflection;
 
-namespace HttpPayloadExecutor
+namespace wolf
 {
     class Program
     {
