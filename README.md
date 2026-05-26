@@ -87,7 +87,7 @@ git clone https://github.com/0x7556/wolfshell.git
 - **操作系统：** Windows
 - **.NET 版本：** .NET Framework 4.8
 
-## 命令 | 漏洞 GetShell
+## 漏洞 通用GetShell命令
 
 具备命令执行或SQL注入条件时，可通过以下6种方法写入 金刚狼 WebShell
 
