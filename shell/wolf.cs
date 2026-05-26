@@ -11,7 +11,7 @@ namespace wolf
     {
         static void Main(string[] args)
         {
-            string url = "http://+:8080/";
+            string url = "http://+:8080/wolfshell";
             using (HttpListener listener = new HttpListener())
             {
                 listener.Prefixes.Add(url);
