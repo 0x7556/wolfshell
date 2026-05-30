@@ -130,7 +130,7 @@ PS：可自行修改，添加启动项，实现持久化，结合级联功能，
 ```bash
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File wolf.ps1
 ```
-### 端口复用
+### IIS端口复用后门
 
 若目标存在IIS，不管是PowerShell还是exe版，均支持端口复用
 
