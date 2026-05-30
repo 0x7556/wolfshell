@@ -90,6 +90,7 @@ git clone https://github.com/0x7556/wolfshell.git
 ## 漏洞 通用GetShell命令
 
 具备命令执行或SQL注入条件时，可通过以下6种方法写入 金刚狼 WebShell
+![exeloader](img/ShellBuild.png)
 
 ### PowerShell写入WebShell wolf.aspx
 
