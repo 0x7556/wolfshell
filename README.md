@@ -72,8 +72,8 @@
 git clone https://github.com/0x7556/wolfshell.git
 ```
 
-2. **配置环境**
-   - 确保目标环境支持ASPX、ASHX，并已正确配置。
+2. **目标环境**
+   - 确保目标环境支持ASPX、ASHX、ASMX等脚本,.NET >= 3.5,Windows 7-Windows 2026。
 
 3. **上传WolfShell**
    - 将WolfShell文件上传到目标服务器，支持ASPX、ASHX、内存马3种类型。
@@ -84,8 +84,11 @@ git clone https://github.com/0x7556/wolfshell.git
 
 ## 使用环境
 
-- **操作系统：** Windows
-- **.NET 版本：** .NET Framework 4.8
+- **本机操作系统：** Windows 7-Windows 2026
+- **本机.NET 版本：** .NET Framework 4.8
+
+- **目标操作系统：** Windows 7-Windows 2026
+- **目标.NET 版本：** >=.NET Framework 3.5
 
 ## 漏洞 通用GetShell命令
 
