@@ -23,7 +23,7 @@
 
 ## 🔥 功能特性
 
-*   Shell：支持[ASPX](shell/aspx)、[ASHX](shell/ashx)、ASMX、[内存马](shell/mem)、[EXE](shell/wolf.cs)、[PowerShell](shell/wolf.ps1)、DLL、MSbuild等8种payload格式)。
+*   Shell：支持[ASPX](shell/aspx)、[ASHX](shell/ashx)、ASMX、[内存马](shell/mem)、[EXE](shell/wolf.cs)、[PowerShell](shell/wolf.ps1)、DLL、MSbuild、ysoserial等9种类型)。
 *   正向马：支持个人机植入正向后门级联控制整个内网，exe正向马[wolf.cs](shell/wolf.cs)、ps1正向马[wolf.ps1](shell/wolf.ps1)、DLL、MSbuild，支持IIS端口复用。
 *   内存马：ASPX一键注入内存马，任意路径访问，每次都可修改shell地址连接，干扰蓝队分析。
 *   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。魔改whoami防止被EDR记录并报警。
@@ -76,7 +76,7 @@ git clone https://github.com/0x7556/wolfshell.git
    - 确保目标环境支持ASPX、ASHX、ASMX等脚本,.NET >= 3.5,Windows 7-Windows 2026。
 
 3. **上传WolfShell**
-   - 将WolfShell文件上传到目标服务器，客户端支持生成ASPX、ASHX、内存马等8种类型。
+   - 将WolfShell文件上传到目标服务器，客户端支持生成ASPX、ASHX、内存马等9种类型。
    - WebShell脚本: https://github.com/0x7556/wolfshell/tree/main/shell
 
 4. **访问WebShell**
