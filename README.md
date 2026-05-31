@@ -76,7 +76,7 @@ git clone https://github.com/0x7556/wolfshell.git
    - 确保目标环境支持ASPX、ASHX、ASMX等脚本,.NET >= 3.5,Windows 7-Windows 2026。
 
 3. **上传WolfShell**
-   - 将WolfShell文件上传到目标服务器，支持ASPX、ASHX、内存马3种类型。
+   - 将WolfShell文件上传到目标服务器，客户端支持生成ASPX、ASHX、内存马等8种类型。
    - WebShell脚本: https://github.com/0x7556/wolfshell/tree/main/shell
 
 4. **访问WebShell**
