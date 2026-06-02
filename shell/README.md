@@ -12,7 +12,7 @@ https://github.com/0x7556/webshell
 
 ### 加入星球
 
-* 为了防止滥用被杀太快，github仅公开部份WebShell，截至2026年1月29日，星球已提供237+金刚狼变种
+* 为了防止滥用被杀太快，github仅公开部份WebShell，截至2026年6月2日，星球已提供346+金刚狼变种
 * [批量检测金刚狼webshell有效性工具](wolfshell/check) AI免杀生成的不一定能用，需工具批量验证
   
 ### AI一键免杀智能体工具
