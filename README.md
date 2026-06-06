@@ -176,7 +176,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 * 其它客户端同理，欢迎提交其它客户端配置代码，跨平台MCP，支持Windows/Linux/MacOS等操作系统
 * Kali下使用请下载 lnx 版本，环境变量 WOLFSHELL_API 设置成 金刚狼 所在Windows机器的远程API地址
-* 金刚狼AI Shell MCP： https://github.com/0x7556/PentestMCP/releases/tag/wolfshell1.0
+* 金刚狼AI Shell MCP：https://github.com/0x7556/PentestMCP/releases/tag/wolfshellmcp3.4
 
 ### 启动AI智能服务器API
 点击金刚狼Shell工具标签“AI->MCP”,找到按钮“API MCP Server”
