@@ -649,10 +649,14 @@ PortScan 192.168.50.159 80，22，135，445
 
 ![WolfShell](img/nextjsexp.png)
 
+## CVE-2026-48907  Joomla JCE Editor RCE漏洞检测
+[+]CVE-2026-48907 http://target.com
+
+![WolfShell](img/CVE-2026-48907.png)
+
 ## EXP本地使用
 
 本机使用 Hacking 里的工具EXP,运行HackTest.exe后，添加Shell: http://127.0.0.1:8080/wolfshell
-
 
 ## 内存加载 内网扫描器
 
