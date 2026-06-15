@@ -657,6 +657,7 @@ PortScan 192.168.50.159 80，22，135，445
 ## EXP本地使用
 
 本机使用 Hacking 里的工具EXP,运行HackTest.exe后，添加Shell: http://127.0.0.1:8080/wolfshell
+右键---Hacking后渗透工具集---点击对应工具EXP，就出现工具用法，文本框输入命令执行
 
 ## 内存加载 内网扫描器
 
