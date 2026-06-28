@@ -8,7 +8,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 
-[中文版本](README-ZH.md)  |  [English Version](README.md)
+[中文版本](README.md)  |  [English Version](README-EN.md)
 
 ## 🐺 幽狼 · Ghost Wolf
 
