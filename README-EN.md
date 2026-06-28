@@ -10,9 +10,9 @@
 
 [中文版本](README.md)  |  [English Version](README-EN.md)
 
-## 🐺 幽狼 · Ghost Wolf
+## 🐺 幽狼 · Abyss Wolf
 
-Legend has it that in the shadow of every line of code, lurks a wolf from the abyss. It feeds on **abandoned bytes** and nests within **broken protocols**. None have seen its form, for its **claws never leave a mark on the logs**. It does not chase the light, nor does it roar in the wind; it only waits for **that slightly ajar door**. When the **glimmer of privilege leaks through the crack**, the Ghost Wolf **arrives silently**—at that moment, **all alarms fall silent, all processes fall asleep**, as if the whole world never noticed. Only the void remembers: **The Ghost Wolf has arrived, and all is silent.**
+Legend has it that in the shadow of every line of code, lurks a wolf from the abyss. It feeds on **abandoned bytes** and nests within **broken protocols**. None have seen its form, for its **claws never leave a mark on the logs**. It does not chase the light, nor does it roar in the wind; it only waits for **that slightly ajar door**. When the **glimmer of privilege leaks through the crack**, the Ghost Wolf **arrives silently**—at that moment, **all alarms fall silent, all processes fall asleep**, as if the whole world never noticed. Only the void remembers: **The Abyss Wolf has arrived, and all is silent.**
 
 ---
 
