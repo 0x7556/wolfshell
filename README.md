@@ -8,7 +8,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 
-## 🐺 幽狼
+## 🐺 幽狼·传说
 
 **幽狼所至，万物无声。狼行之处，不留痕迹。**
 
