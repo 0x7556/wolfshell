@@ -8,9 +8,9 @@
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 
-## 金刚狼：首款支持AI渗透的高级WebShell & C2管理工具
+## 幽狼：首款支持AI渗透的高级WebShell & C2管理工具
 
-金刚狼是一款为微软 **.NET/ASPX** 环境打造的高级 **WebShell** 与 **C2 管理工具**，面向安全研究与渗透测试（**红队**）使用，提供强大的**命令执行**、**提权**与**内网穿透**能力；内置大量渗透工具并集成 **AI 智能渗透** 辅助，支持**内存加载**、**无文件落地**操作，从而实现**高隐蔽性**的内网渗透与灵活扩展。
+幽狼是一款为微软 **.NET/ASPX** 环境打造的高级 **WebShell** 与 **C2 管理工具**，面向安全研究与渗透测试（**红队**）使用，提供强大的**命令执行**、**提权**与**内网穿透**能力；内置大量渗透工具并集成 **AI 智能渗透** 辅助，支持**内存加载**、**无文件落地**操作，从而实现**高隐蔽性**的内网渗透与灵活扩展。
 
 ## 🚀 核心优势
 *   AI智能渗透：支持使用自然语言指挥AI操作WebShell执行命令进行渗透。
@@ -95,7 +95,7 @@ git clone https://github.com/0x7556/wolfshell.git
 
 ## 漏洞 通用GetShell命令
 
-具备命令执行或SQL注入条件时，可通过以下6种方法写入 金刚狼 WebShell
+具备命令执行或SQL注入条件时，可通过以下6种方法写入 幽狼 WebShell
 ![exeloader](img/ShellBuild.png)
 
 ### PowerShell写入WebShell wolf.aspx
@@ -152,7 +152,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 # AI人工智能
 
 ## AI智能免杀 
-使用AI兔杀金刚狼 WebShell 服务端
+使用AI兔杀幽狼 WebShell 服务端
 ![aicode](img/aicode.png)
 
 ## AI智能渗透
@@ -176,73 +176,73 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ```
 
 * 其它客户端同理，欢迎提交其它客户端配置代码，跨平台MCP，支持Windows/Linux/MacOS等操作系统
-* Kali下使用请下载 lnx 版本，环境变量 WOLFSHELL_API 设置成 金刚狼 所在Windows机器的远程API地址
-* 金刚狼AI Shell MCP：https://github.com/0x7556/PentestMCP/releases/tag/wolfshellmcp3.4
+* Kali下使用请下载 lnx 版本，环境变量 WOLFSHELL_API 设置成 幽狼 所在Windows机器的远程API地址
+* 幽狼AI Shell MCP：https://github.com/0x7556/PentestMCP/releases/tag/wolfshellmcp3.4
 
 ### 启动AI智能服务器API
-点击金刚狼Shell工具标签“AI->MCP”,找到按钮“API MCP Server”
+点击幽狼Shell工具标签“AI->MCP”,找到按钮“API MCP Server”
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShell_API.png)
 
-### 1. AI渗透 通过金刚狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
+### 1. AI渗透 通过幽狼 Shell 执行 CMD 命令（使用 Shell 地址和密码）  
 配合相关漏洞让AI自动获取shell，以成功执行命令为验收标准，防止AI幻觉或检测200状态误报为成功GetShell。
 **示例提示词：**
 
-- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 执行 CMD 命令： whoami
-- 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：查看系统信息
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888 执行 CMD 命令： whoami
+- 使用幽狼 http://192.168.1.11/wolf.aspx WolfShell 执行 CMD 命令：查看系统信息
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmd.png)
 
 
 
-### 2. AI渗透 通过金刚狼客户端预配置的 ID 执行 CMD 命令  
+### 2. AI渗透 通过幽狼客户端预配置的 ID 执行 CMD 命令  
 优点不会向AI泄露目标Shell和密码
 **示例提示词：**
-- 使用金刚狼 ID 为 9 的 Shell 执行 CMD 命令：查看当前用户
+- 使用幽狼 ID 为 9 的 Shell 执行 CMD 命令：查看当前用户
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdID.png)
 
 
 
-### 3. AI渗透 通过金刚狼 Shell 执行 PowerShell 命令（使用 Shell 地址和密码）  
+### 3. AI渗透 通过幽狼 Shell 执行 PowerShell 命令（使用 Shell 地址和密码）  
 配合相关漏洞让AI自动获取shell，以成功执行命令为验收标准，防止AI幻觉或检测200状态误报为成功GetShell。
 **示例提示词：**
-- 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：whoami  
-- 使用金刚狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：查看系统信息
+- 使用幽狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：whoami  
+- 使用幽狼 http://192.168.1.11/wolf.aspx WolfShell 执行 PowerShell 命令：查看系统信息
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpCmdWhoami.png)
 
-### 4. AI渗透 通过金刚狼客户端预配置的 ID 执行 PowerShell 命令
+### 4. AI渗透 通过幽狼客户端预配置的 ID 执行 PowerShell 命令
 优点不会向AI泄露目标Shell和密码
 **示例提示词：**
-- 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：ipconfig  
-- 使用金刚狼 ID 为 9 的 Shell 执行 PowerShell 命令：查看当前 IP
+- 使用幽狼 ID 为 9 的 Shell 执行 PowerShell 命令：ipconfig  
+- 使用幽狼 ID 为 9 的 Shell 执行 PowerShell 命令：查看当前 IP
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/WolfShellMcpPS1.png)
 
-### 5. AI渗透 金刚狼 WolfShell 视频演示
+### 5. AI渗透 幽狼 WolfShell 视频演示
 https://github.com/0x7556/hackvideo/blob/main/Wolf%20AI%20Shell.mov
 
-### 6. AI渗透 金刚狼 文件上传
+### 6. AI渗透 幽狼 文件上传
 
 **示例提示词：**
-- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe  到目标 的Public目录
-- 使用金刚狼 ID为9 执行  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe 到目标 的Public目录
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe  到目标 的Public目录
+- 使用幽狼 ID为9 执行  上传文件  C:\Users\Administrator\Desktop\TestTest\wolf.exe 到目标 的Public目录
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_uploadfile.png)
 
-### 7. AI渗透 金刚狼 EfsPotato提权
+### 7. AI渗透 幽狼 EfsPotato提权
 
 **示例提示词：**
-- 使用金刚狼 ID为9 执行EfsPotato执行 whoami
-- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 EfsPotato执行 whoami
+- 使用幽狼 ID为9 执行EfsPotato执行 whoami
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888 EfsPotato执行 whoami
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_efspotato.png)
 
-### 8. AI渗透 金刚狼 BadPotato提权
+### 8. AI渗透 幽狼 BadPotato提权
 
 **示例提示词：**
-- 使用金刚狼 ID为9 执行 BadPotato执行 whoami
-- 使用金刚狼 http://192.168.50.106/shell.aspx Wolf8888 BadPotato执行 whoami
+- 使用幽狼 ID为9 执行 BadPotato执行 whoami
+- 使用幽狼 http://192.168.50.106/shell.aspx Wolf8888 BadPotato执行 whoami
 
 ![img](https://github.com/0x7556/wolfshell/blob/main/img/ai/ai_badpotato.png)
 
@@ -467,7 +467,7 @@ return "Error occurred: " + ex.Message;
 支持加密算法： BASE64、HEX、ASCII、PowerShell、MD5、SHA1、SHA256、URL编码
 支持解密算法： BASE64、HEX、ASCII、PowerShell、URL编码
 
-#### 金刚狼密码
+#### 幽狼密码
 
 ![WolfHash](img/WolfHash.png)
 
