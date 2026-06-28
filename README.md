@@ -1,4 +1,3 @@
-# WolfShell
 
 ![WolfShell](wolfshell.jpg)
 
@@ -8,6 +7,8 @@
 [![Github Stars](https://img.shields.io/github/stars/0x7556/wolfshell)](https://github.com/0x7556/wolfshell) 
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
+
+[中文版本(Chinese version)](README-ZH.md)  |  [English Version](README-EN.md)
 
 ## 🐺 The Legend of the Ghost Wolf
 
