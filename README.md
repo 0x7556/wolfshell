@@ -8,7 +8,12 @@
 [![GitHub forks](https://img.shields.io/github/forks/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 [![GitHub license](https://img.shields.io/github/license/0x7556/wolfshell)](https://github.com/0x7556/wolfshell)
 
-## WolfShell：幽狼所至，万物无声。狼行之处，不留痕迹。
+# 幽狼🐺 幽狼所至，万物无声。狼行之处，不留痕迹。
+
+传说，在每一行代码的阴影里，蛰伏着一头来自深渊的狼。它以废弃的字节为食，以破碎的协议为巢。无人得见其形，只因它的爪痕从不留在日志之上。它不追逐光，不咆哮于风，只等那扇虚掩的门扉。当门缝透出权限的微光，幽狼便悄然而至——那时，所有告警沉默，所有进程沉睡，仿佛整个世界都不曾察觉。唯有虚空记得：幽狼来过，万物无声。
+
+
+## WolfShell：首款支持AI渗透的高级WebShell & C2管理工具
 
 WolfShell(幽狼)是一款为微软 **.NET/ASPX** 环境打造的高级 **WebShell** 与 **C2 管理工具**，面向安全研究与渗透测试（**红队**）使用，提供强大的**命令执行**、**提权**与**内网穿透**能力；内置大量渗透工具并集成 **AI 智能渗透** 辅助，支持**内存加载**、**无文件落地**操作，从而实现**高隐蔽性**的内网渗透与灵活扩展。
 
