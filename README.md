@@ -663,7 +663,7 @@ PortScan 192.168.50.159 80，22，135，445
 ## CVE-2026-48907  Joomla JCE Editor RCE漏洞检测
 [+]CVE-2026-48907 http://target.com
 
-![WolfShell](img/CVE-2026-48907.png)
+![WolfShell](img/CVE-2026-48907.jpg)
 
 ## EXP本地使用
 
