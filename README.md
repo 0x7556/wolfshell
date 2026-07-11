@@ -33,7 +33,7 @@ WolfShell(幽狼)是一款为微软 **.NET/ASPX** 环境打造的高级 **WebShe
 
 ## 🔥 功能特性
 
-*   .NET Shell：[ASPX](shell/aspx)、[ASHX](shell/ashx)、ASMX、[内存马](shell/mem)、[EXE](shell/wolf.cs)、[PowerShell](shell/wolf.ps1)、DLL、MSbuild、ysoserial反序列化等9种类型)。
+*   .NET Shell：[ASPX](shell/aspx)、[ASHX](shell/ashx)、ASMX、[内存马](shell/mem)、[EXE](shell/wolf.cs)、[PowerShell](shell/wolf.ps1)、DLL、MSbuild、ysoserial反序列化等9种类型。
 *   .NET 正向马：支持个人机植入正向后门级联控制整个内网，[EXE](shell/wolf.cs)、[PS1](shell/wolf.ps1)、DLL、MSbuild等，支持IIS端口复用。
 *   .NET 内存马：ASPX一键注入内存马，任意路径访问，每次都可修改shell地址连接，干扰蓝队分析。
 *   PHP Shell: V3.9新增AES、XOR、HEX、Base64、Plain等5种类型PHP WebShell。
