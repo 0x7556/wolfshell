@@ -34,6 +34,7 @@ WolfShell is an advanced **WebShell** and **C2 management tool** built for Micro
 *   **Shell:** Supports 9 script/payload types (including [ASPX](shell/aspx), [ASHX](shell/ashx), ASMX, [Memory Shells](shell/mem), [EXE](shell/wolf.cs), [PowerShell](shell/wolf.ps1), DLL, MSbuild, and ysoserial deserialization).
 *   **Forward Backdoor:** Supports implanting forward backdoors on hosts for cascaded control of the entire internal network (EXE, PS1, DLL, MSbuild, etc.), featuring IIS port multiplexing.
 *   **Memory Shell:** One-click injection of ASPX memory shells. Accessible via arbitrary paths; connection URLs can be modified dynamically each time to disrupt Blue Team analysis.
+*   **PHP Shell**: Added 5 new types of PHP WebShells in V3.9, including AES, XOR, HEX, Base64, and Plain.
 *   **CMD Command Execution:** Execute arbitrary CMD commands directly on target systems. Employs modified `whoami` to bypass EDR logging and alerts.
 *   **File Management:** Enumerate folder contents, create files, upload files, execute EXEs, rename, delete, and modify file timestamps on target systems.
 *   **PowerShell Execution:** Supports executing PowerShell scripts and commands. Employs modified `whoami` to bypass EDR logging and alerts.
