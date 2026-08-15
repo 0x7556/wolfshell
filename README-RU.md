@@ -689,4 +689,4 @@ URL: http://192.168.50.1/ | Status: 200 | Banner: httpd/2.0 | Title: No Title
 
 * Мы рады вашему вниманию на нашем Github и в соцсетях!
   
-![WolfShell](join.png) ![WolfShell](join_group.jpg)
+![wx_public](wx_public.jpg) ![Join](join.jpg)
