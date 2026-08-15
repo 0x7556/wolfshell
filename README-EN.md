@@ -634,4 +634,4 @@ Tools either integrated or planned for in-memory execution. Note: Some tools (e.
 
 ## Community
 Follow updates on WeChat and GitHub. Your stars, follows, and feedback are the driving forces of this project's updates.
-![WolfShell](join.png) ![WolfShell](join_group.jpg)
+![wx_public](wx_public.jpg) ![Join](join.jpg)
