@@ -163,7 +163,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 # AI人工智能
 
 ## AI智能免杀 
-使用AI兔杀幽狼 WebShell 服务端
+使用AI兔杀幽狼 WebShell 服务端，支持llmapi.ini文件配置，官方或中转站API
 ![aicode](img/ai/AIbypassAV.jpg)
 
 ## AI智能渗透
